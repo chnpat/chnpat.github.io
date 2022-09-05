@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <!-- CSS only -->
     <link
@@ -19,76 +20,56 @@
     <body>
         <section style="background-color: #eee;">
             <div class="container py-5">
-                <!-- <div class="row">
-                <div class="col">
-                  <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
-                    <ol class="breadcrumb mb-0">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item"><a href="#">User</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">User Profile</li>
-                    </ol>
-                  </nav>
-                </div>
-              </div> -->
                 <div class="row">
+                    <div class="col">
+                        <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#home">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#about_me">About Me</a></li>
+                                <li class="breadcrumb-item"><a href="#current_work">Current Works</a></li>
+                                <li class="breadcrumb-item"><a href="#publications">Publications</a></li>
+                                <li class="breadcrumb-item"><a href="#participations">Academic Participations</a></li>
+                                <li class="breadcrumb-item"><a href="#contact_form">Contact Me</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row" id="home">
                     <div class="col-lg-4">
                         <div class="card mb-4 shadow">
                             <div class="card-body text-center">
-                                <img src="./Avatar.jpg" alt="avatar"
-                                    class="rounded-circle img-fluid"
-                                    style="width: 150px;">
+                                <img src="./Avatar.jpg" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
                                 <h5 class="my-3">Charnon Pattiyanon</h5>
-                                <p class="text-muted mb-1">&#128218; Researcher,
-                                    &#128421; Developer, &#128248; Photographer</p>
+                                <p class="text-muted mb-1">&#128218; Researcher, &#128421; Developer, &#128248; Photographer</p>
                                 <p class="text-muted mb-4">Bangkok, Thailand</p>
-                                <p class="text-muted mb-4">&#127481&#127469;
-                                    &#127471&#127477;</p>
-                                <!-- <div class="d-flex justify-content-center mb-2">
-                        <button type="button" class="btn btn-primary">Follow</button>
-                        <button type="button" class="btn btn-outline-primary ms-1">Message</button>
-                      </div> -->
+                                <p class="text-muted mb-4">&#127481&#127469; &#127471&#127477;</p>
+                                <div class="d-flex justify-content-center mb-2">
+                                    <a href="#contact_form">
+                                        <button class="btn btn-outline-primary ms-1" type="button">
+                                            Message Me
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="card mb-4 mb-lg-0 shadow">
                             <div class="card-body p-0">
                                 <ul class="list-group list-group-flush rounded-3">
-                                    <li class="list-group-item d-flex
-                                        justify-content-between
-                                        align-items-center p-3">
-                                        <i class="fab fa-github fa-lg"
-                                            style="color: #333333;"></i>
-                                        <p class="mb-0"><a
-                                                href="https://github.com/chnpat"
-                                                target="_blank">chnpat</a></p>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                        <i class="fab fa-github fa-lg" style="color: #333333;"></i>
+                                        <p class="mb-0"><a href="https://github.com/chnpat" target="_blank">chnpat</a></p>
                                     </li>
-                                    <li class="list-group-item d-flex
-                                        justify-content-between
-                                        align-items-center p-3">
-                                        <i class="fab fa-instagram fa-lg"
-                                            style="color: #ac2bac;"></i>
-                                        <p class="mb-0"><a
-                                                href="https://www.instagram.com/chnpat/"
-                                                target="_blank">@chnpat</a></p>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                        <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
+                                        <p class="mb-0"><a href="https://www.instagram.com/chnpat/" target="_blank">@chnpat</a></p>
                                     </li>
-                                    <li class="list-group-item d-flex
-                                        justify-content-between
-                                        align-items-center p-3">
-                                        <i class="fab fa-facebook-f fa-lg"
-                                            style="color: #3b5998;"></i>
-                                        <p class="mb-0"><a
-                                                href="https://www.facebook.com/toptenzc/"
-                                                target="_blank">Charnon
-                                                Pattiyanon</a></p>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                        <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                                        <p class="mb-0"><a href="https://www.facebook.com/toptenzc/" target="_blank">Charnon Pattiyanon</a></p>
                                     </li>
-                                    <li class="list-group-item d-flex
-                                        justify-content-between
-                                        align-items-center p-3">
-                                        <i class="fab fa-brands fa-researchgate
-                                            fa-lg" style="color:lightseagreen"></i>
-                                        <p class="mb-0"><a
-                                                href="https://www.researchgate.net/profile/Charnon-Pattiyanon"
-                                                target="_blank">Charnon
-                                                Pattiyanon</a></p>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                        <i class="fab fa-brands fa-researchgate fa-lg" style="color:lightseagreen"></i>
+                                        <p class="mb-0"><a href="https://www.researchgate.net/profile/Charnon-Pattiyanon" target="_blank">Charnon Pattiyanon</a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -97,13 +78,13 @@
                     <div class="col-lg-8">
                         <div class="card mb-4 shadow">
                             <div class="card-body">
+                                <p class="mb-4"><b><span class="text-primary font-italic me-1">Basic Information</span></b></p>
                                 <div class="row">
                                     <div class="col-sm-3">
                                         <p class="mb-0">Full Name</p>
                                     </div>
                                     <div class="col-sm-9">
-                                        <p class="text-muted mb-0">Charnon
-                                            PATTIYANON</p>
+                                        <p class="text-muted mb-0">Charnon PATTIYANON</p>
                                     </div>
                                 </div>
                                 <hr>
@@ -121,18 +102,16 @@
                                         <p class="mb-0">Mobile</p>
                                     </div>
                                     <div class="col-sm-9">
-                                        <p class="text-muted mb-0">(+81)
-                                            080-4593-1849</p>
+                                        <p class="text-muted mb-0">(+81) 080-4593-1849</p>
                                     </div>
                                 </div>
                                 <hr>
                                 <div class="row">
                                     <div class="col-sm-3">
-                                        <p class="mb-0">Address</p>
+                                        <p class="mb-0">My Hometown</p>
                                     </div>
                                     <div class="col-sm-9">
-                                        <p class="text-muted mb-0">Bangkok,
-                                            Thailand</p>
+                                        <p class="text-muted mb-0">Bangkok, Thailand</p>
                                     </div>
                                 </div>
                             </div>
@@ -141,11 +120,7 @@
                             <div class="col-md-6">
                                 <div class="card mb-4 mb-md-0 shadow">
                                     <div class="card-body">
-                                        <p class="mb-4"><b><span
-                                                    class="text-primary
-                                                    font-italic me-1">Education</span>
-                                                Background</b>
-                                        </p>
+                                        <p class="mb-4"><b><span class="text-primary font-italic me-1">Education Background</span></b></p>
                                         <dl>
                                             <dt>&#127890; <b>Bachelor Degree</b></dt>
                                             <dd style="font-size: 10pt;">
@@ -163,16 +138,18 @@
                                             <dd style="font-size: 10pt;">
                                                 Doctor of Philosophy (Ph.D.) in Information Science<br/>
                                                 Japan Advanced Institute of Science and Technology (JAIST)<br/>
+                                                <em>MEXT Scholarship (University Recommendation)</em><br/>
                                                 <em style="color: darkslateblue;">2019-Present</em>
                                             </dd>
                                         </dl>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="card mb-4 mb-md-0 shadow">
                                     <div class="card-body">
-                                        <p class="mb-4"><b><span class="text-primary font-italic me-1">Work</span> Experience</b></p>
+                                        <p class="mb-4"><b><span class="text-primary font-italic me-1">Work Experience</span></b></p>
                                         <dl>
                                             <dt>&#128722; <b>Vevo Systems Co. Ltd.</b></dt>
                                             <dd style="font-size: 10pt;">
@@ -198,12 +175,163 @@
                 </div>
             </div>
             <br/>
-            <div class="row">
+            <div class="row" id="about_me">
                 <div class="col-md-12">
                     <div class="card mb-lg-12 shadow">
                         <div class="card-body">
-                            <p class="mb-4"><b><span class="text-primary font-italic me-1">About</span> Me</b></p>
-                            <p></p>
+                            <p class="mb-4"><b><span class="text-primary font-italic me-1">About Me and My Research Interests</span></b></p>
+                            <p>
+                                I'm currently working as a researcher in academia, and I'm interested in every aspect of <b>software engineering</b>. 
+                                <b>Information security</b>, <b>personal data protection</b>, and <b>Identity & Access Management (IAM)</b> are my bread and butter. 
+                                In addition, I'm active in the group of people who use <b>formal methods</b>, such as formal specification, formal verification, and static program analysis. 
+                                However, I am enthusiastic about <b>blockchain</b>, <b>Bitcoin</b>, <b>self-sovereign identity</b>, and <b>consensus mechanisms</b> as well as other forms of <b>decentralized technology</b>. 
+                                The areas of <b>natural language processing</b> and <b>machine learning</b> are also areas in which I am actively expanding my knowledge and skillset.
+                            </p>
+                            <p>
+                                In addition to my passion for learning, I am also an avid photographer and traveler who values documenting the world's wonders. 
+                                My Instagram account is where I'd love to show off some of my work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row" id="current_work">
+                <div class="col-md-12">
+                    <div class="card mb-lg-12 shadow">
+                        <div class="card-body">
+                            <p class="mb-4"><b><span class="text-primary font-italic me-1">Current Work - In-Progress</span></b></p>
+                            <ul>
+                                <li>
+                                    Pattiyanon, C. and Aoki, T. (2022). Weakness identification framework for SSI management systems using cross-domain recommendations. (<u>To be submitted</u>). 
+                                </li>
+                                <!-- <div class="d-flex justify-content-end">
+                                    <a href="https://doi.org/10.1109/SNPD.2017.8022749" target="_blank"><button class="btn btn-outline-secondary">DOI</button></a>
+                                    <a href="https://www.researchgate.net/publication/319413527_Quality_model_for_assessing_object-oriented_design_patterns_under_development" target="_blank"><button class="btn btn-outline-secondary">Research Gate</button></a>
+                                </div>
+                                <br/> -->
+                                <li>
+                                    Pattiyanon, C.; Tomita, T. and Aoki, T. (2022). A Specification of Secure and Private SSI Sharing Events in Alloy. (<u>To be submitted</u>).
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row" id="publications">
+                <div class="col-md-12">
+                    <div class="card mb-lg-12 shadow">
+                        <div class="card-body">
+                            <p class="mb-4"><b><span class="text-primary font-italic me-1">Publications</span></b></p>
+                            <b>Conference Papers</b>
+                            <ul>
+                                <li>
+                                    Pattiyanon, C. and Senivongse, T. (2017). Quality model for assessing object-oriented design patterns under development. 
+                                    In Proceedings of the 2017 18th IEEE/ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing - SNPD, pages 377-383.
+                                </li>
+                                <div class="d-flex justify-content-end">
+                                    <a href="https://doi.org/10.1109/SNPD.2017.8022749" target="_blank"><button class="btn btn-outline-secondary">DOI</button></a>
+                                    <a href="https://www.researchgate.net/publication/319413527_Quality_model_for_assessing_object-oriented_design_patterns_under_development" target="_blank"><button class="btn btn-outline-secondary">Research Gate</button></a>
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Pattiyanon2017">
+                                        Cite
+                                    </button>
+                                    <div class="modal fade" id="Pattiyanon2017" tabindex="-1" aria-labelledby="Pattiyanon2017Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="Pattiyanon2017Label">Cite this paper</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <b>Text:</b>
+                                                    <div class="highlight">
+                                                        <pre>
+                                                            Pattiyanon, C. and Senivongse, T. (2017). Quality model for assessing object-oriented design patterns under development. In Proceedings of the 2017 18th IEEE/ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing - SNPD, pages 377-383. DOI: 10.1109/SNPD.2017.8022749.
+                                                        </pre>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="modal-container">
+                                        <div class="modal is-active" id="Pattiyanon2017" tabindex="-1" aria-labelledby="Pattiyanon2017Label" aria-hidden="true">
+                                            <div role="presentation" class="modal-background"></div>
+                                            <div class="modal-card">
+                                                <section class="modal-card-body">
+                                                    <div class="content">
+                                                        <pre>
+                                                            @inproceedings{ding_bloccess_2020,
+                                                                            title = {Bloccess: {Towards} {Fine}-{Grained} {Access} {Control} {Using} {Blockchain} in a {Distributed} {Untrustworthy} {Environment}},
+                                                                            isbn = {978-1-72811-035-6},
+                                                                            url = {https://ieeexplore.ieee.org/abstract/document/9126741},
+                                                                            doi = {10.1109/MobileCloud48802.2020.00011},
+                                                                            booktitle = {2020 8th {IEEE} {International} {Conference} on {Mobile} {Cloud} {Computing}, {Services}, and {Engineering} ({MobileCloud})},
+                                                                            publisher = {IEEE},
+                                                                            author = {Ding, Yepeng and Sato, Hiroyuki},
+                                                                            year = {2020},
+                                                                            pages = {17--22},
+                                                            }
+                                                        </pre>
+                                                    </div>
+                                                </section>
+                                            <footer class="modal-card-foot is-justify-content-right">
+                                                <button class="is-dark button" tabindex="0">Copy</button>
+                                            </footer>
+                                            </div>
+                                            <button type="button" class="modal-close is-large" aria-label="close"></button>
+                                        </div>
+                                    </div> -->
+                                    
+                                </div>
+                                <br/>
+                                <li>
+                                    Pattiyanon, C.; Aoki, T. and Ishii, D. (2022). A Method for Detecting Common Weaknesses in Self-Sovereign Identity Systems Using Domain-Specific Models and Knowledge Graph. 
+                                    In Proceedings of the 10th International Conference on Model-Driven Engineering and Software Development - MODELSWARD, ISBN 978-989-758-550-0; ISSN 2184-4348, pages 219-226. 
+                                </li>
+                                <div class="d-flex justify-content-end">
+                                    <a href="https://doi.org/10.5220/0010824900003119" target="_blank"><button class="btn btn-outline-secondary">DOI</button></a>
+                                    <a href="https://www.researchgate.net/publication/357955270_A_Method_for_Detecting_Common_Weaknesses_in_Self-Sovereign_Identity_Systems_Using_Domain-Specific_Models_and_Knowledge_Graph" target="_blank"><button class="btn btn-outline-secondary">Research Gate</button></a>
+                                </div>
+                                <br/>
+                                <li>
+                                    Pattiyanon, C. and Aoki, T. (2022). Analysis and Enhancement of Self-sovereign Identity System Properties Compiling Standards and Regulations. 
+                                    In Proceedings of the 8th International Conference on Information Systems Security and Privacy - ICISSP, ISBN 978-989-758-553-1; ISSN 2184-4356, pages 133-144. 
+                                </li>
+                                <div class="d-flex justify-content-end">
+                                    <a href="https://doi.org/10.5220/0010877300003120" target="_blank"><button class="btn btn-outline-secondary">DOI</button></a>
+                                    <a href="https://www.researchgate.net/publication/357955200_Analysis_and_Enhancement_of_Self-sovereign_Identity_System_Properties_Compiling_Standards_and_Regulations" target="_blank"><button class="btn btn-outline-secondary">Research Gate</button></a>
+                                </div>
+                            </ul>
+                            <b>Journal Articles</b>
+                            <ul>
+                                <li>
+                                    Pattiyanon, C. and Aoki, T. (2022). Compliance SSI System Property Set to Laws, Regulations, and Technical Standards.
+                                    <em>IEEE Access</em>. (<u>Accepted</u>, <u>In-Press</u>)
+                                </li>
+                                <div class="d-flex justify-content-end">
+                                    <a href="https://doi.org/10.1109/ACCESS.2022.3204112" target="_blank"><button class="btn btn-outline-secondary">DOI</button></a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row" id="participations">
+                <div class="col-md-12">
+                    <div class="card mb-lg-12 shadow">
+                        <div class="card-body">
+                            <p class="mb-4"><b><span class="text-primary font-italic me-1">Academic Participations</span></b></p>
+                            <b>International Conferences</b>
+                            <ul>
+                                <li>The 9th Conference on Formal Methods in Software Engineering, <b>FormaliSE 2021</b>. February 2021. <u>Reviewer</u>.</li>
+                                <li>The 15th Theoretical Aspects of Software Engineering Conference, <b>TASE 2021</b>. April 2021. <u>Reviewer</u>.</li>
+                                <li>The 26th IEEE Pacific Rim International Symposium on Dependable Computing, <b>PRDC 2021</b>. August 2021. <u>Reviewer</u>.</li>
+                                <li>The 10th Conference on Formal Methods in Software Engineering, <b>FormaliSE 2022</b>. February 2022. <u>Reviewer</u>.</li>
+                                <li>The 27th IEEE Pacific Rim International Symposium on Dependable Computing, <b>PRDC 2022</b>. August 2022. <u>Reviewer</u>.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -217,8 +345,8 @@
                                 <div class="row no-gutters">
                                     <div class="col-md-6 d-flex align-items-stretch">
                                         <div class="contact-wrap w-100 p-md-5 p-4 py-5">
-                                            <h3 class="mb-4">Contact Me</h3>
-                                            <form method="POST" id="contactForm" action="https://formsubmit.co/11f1fcf33613df19c1b871de3e726a53" name="contactForm" class="contactForm" novalidate="novalidate" target="_blank">
+                                            <h3 class="mb-4 text-muted">&#128232; Contact Me</h3>
+                                            <form method="POST" id="contact_form" action="https://formsubmit.co/11f1fcf33613df19c1b871de3e726a53" name="contactForm" class="needs-validation" target="_blank">
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="form-group">
@@ -248,7 +376,7 @@
                                                     <p></p>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
-                                                            <button type="submit" class="btn btn-primary">Sent Message</button>
+                                                            <button type="submit" class="btn btn-primary">Send Message</button>
                                                             <div class="submitting"></div>
                                                         </div>
                                                     </div>
@@ -258,40 +386,16 @@
                                     </div>
                                     <div class="col-md-6 d-flex align-items-stretch">
                                         <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
-                                            <h3>Contact information</h3>
-                                            <p class="mb-4">We're open for any suggestion or just to have a chat</p>
-                                            <div class="dbox w-100 d-flex align-items-start">
-                                                <div class="icon d-flex align-items-center justify-content-center">
-                                                    <span class="fa fa-map-marker"></span>
-                                                </div>
-                                                <div class="text pl-3">
-                                                    <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-                                                </div>
-                                            </div>
-                                            <div class="dbox w-100 d-flex align-items-center">
-                                                <div class="icon d-flex align-items-center justify-content-center">
-                                                    <span class="fa fa-phone"></span>
-                                                </div>
-                                                <div class="text pl-3">
-                                                    <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-                                                </div>
-                                            </div>
-                                            <div class="dbox w-100 d-flex align-items-center">
-                                                <div class="icon d-flex align-items-center justify-content-center">
-                                                    <span class="fa fa-paper-plane"></span>
-                                                </div>
-                                                <div class="text pl-3">
-                                                    <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-                                                </div>
-                                            </div>
-                                            <div class="dbox w-100 d-flex align-items-center">
-                                                <div class="icon d-flex align-items-center justify-content-center">
-                                                    <span class="fa fa-globe"></span>
-                                                </div>
-                                                <div class="text pl-3">
-                                                    <p><span>Website</span> <a href="#">yoursite.com</a></p>
-                                                </div>
-                                            </div>
+                                            <h3 class="text-muted"> &#128172; Contact Instruction</h3>
+                                            <p class="mb-4">
+                                                I welcome academic and personal collaborations. The following services are available for you to request my assistance with:
+                                                <ul>
+                                                    <li>Collaboration on research relating to my areas of interest.</li>
+                                                    <li>Request disclosure of the full text of my academic paper.</li>
+                                                    <li>Request for any academic contributions.</li>
+                                                </ul>
+                                                I will try my best to respond to you as soon as possible.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -299,15 +403,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-12">
-                    <div class="card mb-lg-6">
-                        <form action="https://formsubmit.co/your@email.com" method="POST">
-                            <input type="text" name="name" required>
-                            <input type="email" name="email" required>
-                            <button type="submit">Send</button>
-                       </form>
-                    </div>
-                </div> -->
             </div>
         </section>
         <div class="footer-dark">
@@ -315,31 +410,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 item text text-center">
-                            <b>Email: </b><a href="mailto:charnon.pat@gmail.com"
-                                style="color:#3b5998; text-decoration: none;">charnon.pat@gmail.com</a>
+                            <b>Email: </b><a href="mailto:charnon.pat@gmail.com" style="color:#3b5998; text-decoration: none;">charnon.pat@gmail.com</a>
                             <p>Aoki Laboratory</p>
-                            <p>Japan Advanced Institute of Science and
-                                Technology</p>
+                            <p>Japan Advanced Institute of Science and Technology</p>
                             <p>1-1 Asahidai, Nomi-shi, Ishikawa, 923-1211, Japan</p>
                         </div>
                         <div class="col item text-center outside">
-                            <a href="https://github.com/chnpat" target="_blank"><i
-                                    class="fab fa-github fa-lg" style="color:
-                                    #fff;"></i> Github</a> |
-                            <a href="https://www.instagram.com/chnpat/"
-                                target="_blank"><i class="fab fa-instagram
-                                    fa-lg" style="color: #ac2bac;"></i>
-                                Instagram</a> |
-                            <a href="https://www.facebook.com/toptenzc/"
-                                target="_blank"><i class="fab fa-facebook-f
-                                    fa-lg" style="color: #3b5998;"></i> Facebook</a>
-                            |
-                            <a
-                                href="https://www.researchgate.net/profile/Charnon-Pattiyanon"
-                                target="_blank"><i class="fab fa-brands
-                                    fa-researchgate fa-lg"
-                                    style="color:lightseagreen"></i> Research
-                                Gate</a>
+                            <a href="https://github.com/chnpat" target="_blank"><i class="fab fa-github fa-lg" style="color: #fff;"></i> Github</a> |
+                            <a href="https://www.instagram.com/chnpat/" target="_blank"><i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i> Instagram</a> |
+                            <a href="https://www.facebook.com/toptenzc/" target="_blank"><i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i> Facebook</a> |
+                            <a href="https://www.researchgate.net/profile/Charnon-Pattiyanon" target="_blank"><i class="fab fa-brands fa-researchgate fa-lg" style="color:lightseagreen"></i> Research Gate</a>
                         </div>
                     </div>
                     <p class="copyright">Charnon Pattiyanon &#169; 2022</p>

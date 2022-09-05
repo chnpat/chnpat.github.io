@@ -96,3 +96,12 @@
   .footer-dark .item.outside > a:hover {
     color: cornflowerblue;
   }
+
+  pre {
+    text-align: left;
+    white-space: pre-line;
+  }
+
+  .highlight {
+    background-color:lightgrey;
+  }
