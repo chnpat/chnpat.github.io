@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="./style.css">
     <title>Charnon Pattiyanon's Profile</title>
     <body>
+        <div id="copied_alert" class="alert alert-success alert-dismissible fade show alert-fixed" style="display: none;" role="alert">
+            <strong>Text Copied!</strong> The reference is copied to your clipboards.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
         <section style="background-color: #eee;">
             <div class="container py-5">
                 <div class="row">
@@ -205,11 +209,6 @@
                                 <li>
                                     Pattiyanon, C. and Aoki, T. (2022). Weakness identification framework for SSI management systems using cross-domain recommendations. (<u>To be submitted</u>). 
                                 </li>
-                                <!-- <div class="d-flex justify-content-end">
-                                    <a href="https://doi.org/10.1109/SNPD.2017.8022749" target="_blank"><button class="btn btn-outline-secondary">DOI</button></a>
-                                    <a href="https://www.researchgate.net/publication/319413527_Quality_model_for_assessing_object-oriented_design_patterns_under_development" target="_blank"><button class="btn btn-outline-secondary">Research Gate</button></a>
-                                </div>
-                                <br/> -->
                                 <li>
                                     Pattiyanon, C.; Tomita, T. and Aoki, T. (2022). A Specification of Secure and Private SSI Sharing Events in Alloy. (<u>To be submitted</u>).
                                 </li>
@@ -231,59 +230,35 @@
                                     In Proceedings of the 2017 18th IEEE/ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing - SNPD, pages 377-383.
                                 </li>
                                 <div class="d-flex justify-content-end">
-                                    <a href="https://doi.org/10.1109/SNPD.2017.8022749" target="_blank"><button class="btn btn-outline-secondary">DOI</button></a>
-                                    <a href="https://www.researchgate.net/publication/319413527_Quality_model_for_assessing_object-oriented_design_patterns_under_development" target="_blank"><button class="btn btn-outline-secondary">Research Gate</button></a>
-                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Pattiyanon2017">
+                                    <a href="https://doi.org/10.1109/SNPD.2017.8022749" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">DOI</button></a>
+                                    <a href="https://www.researchgate.net/publication/319413527_Quality_model_for_assessing_object-oriented_design_patterns_under_development" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">Research Gate</button></a> 
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#C_Pattiyanon_SNPD_2017">
                                         Cite
                                     </button>
-                                    <div class="modal fade" id="Pattiyanon2017" tabindex="-1" aria-labelledby="Pattiyanon2017Label" aria-hidden="true">
+                                    <div class="modal fade" id="C_Pattiyanon_SNPD_2017" tabindex="-1" aria-labelledby="C_Pattiyanon_SPND_2017_Label" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="Pattiyanon2017Label">Cite this paper</h5>
+                                                    <h5 class="modal-title" id="C_Pattiyanon_SPND_2017_Label">Cite this paper</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <b>Text:</b>
-                                                    <div class="highlight">
-                                                        <pre>
-                                                            Pattiyanon, C. and Senivongse, T. (2017). Quality model for assessing object-oriented design patterns under development. In Proceedings of the 2017 18th IEEE/ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing - SNPD, pages 377-383. DOI: 10.1109/SNPD.2017.8022749.
-                                                        </pre>
-                                                    </div>
-
+                                                    <b>Text:</b> <button onclick="copyText('C_Pattiyanon_SNPD_2017_Text');" class="btn btn-sm btn-outline-primary">Copy</button>
+                                                    <textarea id="C_Pattiyanon_SNPD_2017_Text" class="form-control" type="text" aria-label="Disabled input example" rows="6" style="resize: none;" disabled>Pattiyanon, C. and Senivongse, T. (2017). Quality model for assessing object-oriented design patterns under development. In Proceedings of the 2017 18th IEEE/ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing - SNPD, pages 377-383. DOI: 10.1109/SNPD.2017.8022749.</textarea>
+                                                    <b>Bibtex:</b> <button onclick="copyText('C_Pattiyanon_SNPD_2017_Bib');" class="btn btn-sm btn-outline-primary">Copy</button>
+                                                    <textarea id="C_Pattiyanon_SNPD_2017_Bib" class="form-control" type="text" aria-label="Disabled input example" rows="10" style="resize: none; white-space: pre;" disabled>@inproceedings{Pattiyanon2017,
+    title = {Quality Model for Assessing Object-Oriented Design Patterns Under Development}},
+    url = {https://ieeexplore.ieee.org/document/8022749/},
+    doi = {10.1109/SNPD.2017.8022749},
+    booktitle = {2017 18th IEEE/ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing (SNPD)}
+    author = {Pattiyanon, Charnon and Senivongse, Twittie},
+    year = {2017},
+    pages = {377--383},
+}</textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- <div class="modal-container">
-                                        <div class="modal is-active" id="Pattiyanon2017" tabindex="-1" aria-labelledby="Pattiyanon2017Label" aria-hidden="true">
-                                            <div role="presentation" class="modal-background"></div>
-                                            <div class="modal-card">
-                                                <section class="modal-card-body">
-                                                    <div class="content">
-                                                        <pre>
-                                                            @inproceedings{ding_bloccess_2020,
-                                                                            title = {Bloccess: {Towards} {Fine}-{Grained} {Access} {Control} {Using} {Blockchain} in a {Distributed} {Untrustworthy} {Environment}},
-                                                                            isbn = {978-1-72811-035-6},
-                                                                            url = {https://ieeexplore.ieee.org/abstract/document/9126741},
-                                                                            doi = {10.1109/MobileCloud48802.2020.00011},
-                                                                            booktitle = {2020 8th {IEEE} {International} {Conference} on {Mobile} {Cloud} {Computing}, {Services}, and {Engineering} ({MobileCloud})},
-                                                                            publisher = {IEEE},
-                                                                            author = {Ding, Yepeng and Sato, Hiroyuki},
-                                                                            year = {2020},
-                                                                            pages = {17--22},
-                                                            }
-                                                        </pre>
-                                                    </div>
-                                                </section>
-                                            <footer class="modal-card-foot is-justify-content-right">
-                                                <button class="is-dark button" tabindex="0">Copy</button>
-                                            </footer>
-                                            </div>
-                                            <button type="button" class="modal-close is-large" aria-label="close"></button>
-                                        </div>
-                                    </div> -->
-                                    
+                                    </div>                                    
                                 </div>
                                 <br/>
                                 <li>
@@ -291,8 +266,34 @@
                                     In Proceedings of the 10th International Conference on Model-Driven Engineering and Software Development - MODELSWARD, ISBN 978-989-758-550-0; ISSN 2184-4348, pages 219-226. 
                                 </li>
                                 <div class="d-flex justify-content-end">
-                                    <a href="https://doi.org/10.5220/0010824900003119" target="_blank"><button class="btn btn-outline-secondary">DOI</button></a>
-                                    <a href="https://www.researchgate.net/publication/357955270_A_Method_for_Detecting_Common_Weaknesses_in_Self-Sovereign_Identity_Systems_Using_Domain-Specific_Models_and_Knowledge_Graph" target="_blank"><button class="btn btn-outline-secondary">Research Gate</button></a>
+                                    <a href="https://doi.org/10.5220/0010824900003119" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">DOI</button></a>
+                                    <a href="https://www.researchgate.net/publication/357955270_A_Method_for_Detecting_Common_Weaknesses_in_Self-Sovereign_Identity_Systems_Using_Domain-Specific_Models_and_Knowledge_Graph" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">Research Gate</button></a>
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#C_Pattiyanon_MODELSWARD_2022">
+                                        Cite
+                                    </button>
+                                    <div class="modal fade" id="C_Pattiyanon_MODELSWARD_2022" tabindex="-1" aria-labelledby="C_Pattiyanon_MODELSWARD_2022_Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="C_Pattiyanon_MODELSWARD_2022_Label">Cite this paper</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <b>Text:</b> <button onclick="copyText('C_Pattiyanon_MODELSWARD_2022_Text');" class="btn btn-sm btn-outline-primary">Copy</button>
+                                                    <textarea id="C_Pattiyanon_MODELSWARD_2022_Text" class="form-control" type="text" aria-label="Disabled input example" rows="7" style="resize: none;" disabled>Pattiyanon, C.; Aoki, T. and Ishii, D. (2022). A Method for Detecting Common Weaknesses in Self-Sovereign Identity Systems Using Domain-Specific Models and Knowledge Graph. In Proceedings of the 10th International Conference on Model-Driven Engineering and Software Development - MODELSWARD, ISBN 978-989-758-550-0; ISSN 2184-4348, pages 219-226.</textarea>
+                                                    <b>Bibtex:</b> <button onclick="copyText('C_Pattiyanon_MODELSWARD_2022_Bib');" class="btn btn-sm btn-outline-primary">Copy</button>
+                                                    <textarea id="C_Pattiyanon_MODELSWARD_2022_Bib" class="form-control" type="text" aria-label="Disabled input example" rows="9" style="resize: none; white-space: pre;" disabled>@inproceedings{Pattiyanon2022MODELSWARD,
+    title = {A Method for Detecting Common Weaknesses in Self-Sovereign Identity Systems Using Domain-Specific Models and Knowledge Graph},
+    doi = {10.5220/0010824900003119},
+    booktitle = {10th International Conference on Model-Driven Engineering and Software Development (MODELSWARD)}
+    author = {Pattiyanon, Charnon and Aoki, Toshiaki and Ishii, Daisuke},
+    year = {2022},
+    pages = {219--226},
+}</textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
                                 </div>
                                 <br/>
                                 <li>
@@ -300,8 +301,34 @@
                                     In Proceedings of the 8th International Conference on Information Systems Security and Privacy - ICISSP, ISBN 978-989-758-553-1; ISSN 2184-4356, pages 133-144. 
                                 </li>
                                 <div class="d-flex justify-content-end">
-                                    <a href="https://doi.org/10.5220/0010877300003120" target="_blank"><button class="btn btn-outline-secondary">DOI</button></a>
-                                    <a href="https://www.researchgate.net/publication/357955200_Analysis_and_Enhancement_of_Self-sovereign_Identity_System_Properties_Compiling_Standards_and_Regulations" target="_blank"><button class="btn btn-outline-secondary">Research Gate</button></a>
+                                    <a href="https://doi.org/10.5220/0010877300003120" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">DOI</button></a>
+                                    <a href="https://www.researchgate.net/publication/357955200_Analysis_and_Enhancement_of_Self-sovereign_Identity_System_Properties_Compiling_Standards_and_Regulations" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">Research Gate</button></a>
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#C_Pattiyanon_ICISSP_2022">
+                                        Cite
+                                    </button>
+                                    <div class="modal fade" id="C_Pattiyanon_ICISSP_2022" tabindex="-1" aria-labelledby="C_Pattiyanon_ICISSP_2022_Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="C_Pattiyanon_ICISSP_2022_Label">Cite this paper</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <b>Text:</b> <button onclick="copyText('C_Pattiyanon_ICISSP_2022_Text');" class="btn btn-sm btn-outline-primary">Copy</button>
+                                                    <textarea id="C_Pattiyanon_ICISSP_2022_Text" class="form-control" type="text" aria-label="Disabled input example" rows="7" style="resize: none;" disabled>Pattiyanon, C. and Aoki, T. (2022). Analysis and Enhancement of Self-sovereign Identity System Properties Compiling Standards and Regulations. In Proceedings of the 8th International Conference on Information Systems Security and Privacy - ICISSP, ISBN 978-989-758-553-1; ISSN 2184-4356, pages 133-144.</textarea>
+                                                    <b>Bibtex:</b> <button onclick="copyText('C_Pattiyanon_ICISSP_2022_Bib');" class="btn btn-sm btn-outline-primary">Copy</button>
+                                                    <textarea id="C_Pattiyanon_ICISSP_2022_Bib" class="form-control" type="text" aria-label="Disabled input example" rows="9" style="resize: none; white-space: pre;" disabled>@inproceedings{Pattiyanon2022ICISSP,
+    title = {Analysis and Enhancement of Self-sovereign Identity System Properties Compiling Standards and Regulations},
+    doi = {10.5220/0010877300003120},
+    booktitle = {8th International Conference on Information Systems Security and Privacy (ICISSP)}
+    author = {Pattiyanon, Charnon and Aoki, Toshiaki},
+    year = {2022},
+    pages = {133--144},
+}</textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
                                 </div>
                             </ul>
                             <b>Journal Articles</b>
@@ -311,7 +338,35 @@
                                     <em>IEEE Access</em>. (<u>Accepted</u>, <u>In-Press</u>)
                                 </li>
                                 <div class="d-flex justify-content-end">
-                                    <a href="https://doi.org/10.1109/ACCESS.2022.3204112" target="_blank"><button class="btn btn-outline-secondary">DOI</button></a>
+                                    <a href="https://doi.org/10.1109/ACCESS.2022.3204112" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">DOI</button></a>
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#J_Pattiyanon_IEEE_Access_2022">
+                                        Cite
+                                    </button>
+                                    <div class="modal fade" id="J_Pattiyanon_IEEE_Access_2022" tabindex="-1" aria-labelledby="J_Pattiyanon_IEEE_Access_2022_Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="J_Pattiyanon_IEEE_Access_2022_Label">Cite this paper</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <b>Text:</b> <button onclick="copyText('J_Pattiyanon_IEEE_Access_2022_Text');" class="btn btn-sm btn-outline-primary">Copy</button>
+                                                    <textarea id="J_Pattiyanon_IEEE_Access_2022_Text" class="form-control" type="text" aria-label="Disabled input example" rows="4" style="resize: none;" disabled>Pattiyanon, C. and Aoki, T. (2022). Compliance SSI System Property Set to Laws, Regulations, and Technical Standards. IEEE Access. DOI: 10.1109/ACCESS.2022.3204112.</textarea>
+                                                    <b>Bibtex:</b> <button onclick="copyText('J_Pattiyanon_IEEE_Access_2022_Bib');" class="btn btn-sm btn-outline-primary">Copy</button>
+                                                    <textarea id="J_Pattiyanon_IEEE_Access_2022_Bib" class="form-control" type="text" aria-label="Disabled input example" rows="11" style="resize: none; white-space: pre;" disabled>@article{Pattiyanon2022IEEEAccess,
+    title = {Compliance SSI System Property Set to Laws, Regulations, and Technical Standards},
+    doi = {10.5220/0010877300003120},
+    journal = {IEEE Access}
+    author = {Pattiyanon, Charnon and Aoki, Toshiaki},
+    volume = {},
+    number = {},
+    year = {2022},
+    pages = {1--1},
+}</textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
                                 </div>
                             </ul>
                         </div>
@@ -326,11 +381,11 @@
                             <p class="mb-4"><b><span class="text-primary font-italic me-1">Academic Participations</span></b></p>
                             <b>International Conferences</b>
                             <ul>
-                                <li>The 9th Conference on Formal Methods in Software Engineering, <b>FormaliSE 2021</b>. February 2021. <u>Reviewer</u>.</li>
-                                <li>The 15th Theoretical Aspects of Software Engineering Conference, <b>TASE 2021</b>. April 2021. <u>Reviewer</u>.</li>
-                                <li>The 26th IEEE Pacific Rim International Symposium on Dependable Computing, <b>PRDC 2021</b>. August 2021. <u>Reviewer</u>.</li>
-                                <li>The 10th Conference on Formal Methods in Software Engineering, <b>FormaliSE 2022</b>. February 2022. <u>Reviewer</u>.</li>
-                                <li>The 27th IEEE Pacific Rim International Symposium on Dependable Computing, <b>PRDC 2022</b>. August 2022. <u>Reviewer</u>.</li>
+                                <li>The 9th Conference on Formal Methods in Software Engineering, <b>FormaliSE 2021</b>. February 2021. <u>Sub-Reviewer</u>.</li>
+                                <li>The 15th Theoretical Aspects of Software Engineering Conference, <b>TASE 2021</b>. April 2021. <u>Sub-Reviewer</u>.</li>
+                                <li>The 26th IEEE Pacific Rim International Symposium on Dependable Computing, <b>PRDC 2021</b>. August 2021. <u>Sub-Reviewer</u>.</li>
+                                <li>The 10th Conference on Formal Methods in Software Engineering, <b>FormaliSE 2022</b>. February 2022. <u>Sub-Reviewer</u>.</li>
+                                <li>The 27th IEEE Pacific Rim International Symposium on Dependable Computing, <b>PRDC 2022</b>. August 2022. <u>Sub-Reviewer</u>.</li>
                             </ul>
                         </div>
                     </div>
@@ -426,9 +481,8 @@
                 </div>
             </footer>
         </div>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <script src="./index.js"></script>
     </body>
 </html>
