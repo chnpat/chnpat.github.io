@@ -1,722 +1,1180 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-        <link rel="icon" href="./favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon" href="./favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon-precomposed" href="./favicon.ico" type="image/x-icon">
-        <title>Charnon's Academic Profile</title>
-        <meta http-equiv="Content-Language" content="th" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    </head>
-    <body>
-        <div id="copied_alert" class="alert alert-success alert-dismissible fade show alert-fixed" style="display: none;" role="alert">
-            <strong>Text Copied!</strong> The reference is copied to your clipboards.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        <section style="background-color: #eee; font-size: 10pt;">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col">
-                        <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#home">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#about_me">About Me</a></li>
-                                <li class="breadcrumb-item"><a href="#current_work">Current Works</a></li>
-                                <li class="breadcrumb-item"><a href="#publications">Publications</a></li>
-                                <li class="breadcrumb-item"><a href="#participations">Academic Participations</a></li>
-                                <li class="breadcrumb-item"><a href="#contact_form">Contact Me</a></li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-                <div class="row" id="home">
-                    <div class="col-lg-4">
-                        <div class="card mb-4 shadow">
-                            <div class="card-body text-center">
-                                <img src="./Avatar.jpg" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
-                                <h5 class="my-3">Charnon Pattiyanon, Ph.D.</h5>
-                                <p class="text-muted mb-1">&#128218; Researcher <br/> &#128421; Developer <br/> &#128248; Photographer</p>
-                                <hr>
-                                <p class="text-muted mb-4">Bangkok, Thailand</p>
-                                <p class="text-muted mb-4">Visited: &#127481&#127469; &#127471&#127477; &#127472;&#127479; &#x1f1f9;&#x1f1fc;</p>
-                                <div class="d-flex justify-content-center mb-2">
-                                    <a href="#contact_form">
-                                        <button class="btn btn-outline-primary ms-1" type="button">
-                                            Message Me
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-4 mb-lg-0 shadow">
-                            <div class="card-body p-0">
-                                <ul class="list-group list-group-flush rounded-3">
-                                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                                        <i class="fab fa-github fa-lg" style="color: #333333;"></i>
-                                        <p class="mb-0"><a href="https://github.com/chnpat" target="_blank">chnpat</a></p>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                                        <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
-                                        <p class="mb-0"><a href="https://www.instagram.com/chnpat/" target="_blank">@chnpat</a></p>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                                        <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
-                                        <p class="mb-0"><a href="https://www.facebook.com/toptenzc/" target="_blank">Charnon Pattiyanon</a></p>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                                        <i class="fab fa-brands fa-researchgate fa-lg" style="color:lightseagreen"></i>
-                                        <p class="mb-0"><a href="https://www.researchgate.net/profile/Charnon-Pattiyanon" target="_blank">Charnon Pattiyanon</a></p>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                                        <i class="fab fa-brands fa-orcid fa-lg" style="color: yellowgreen;"></i>
-                                        <p class="mb-0"><a href="https://orcid.org/my-orcid?orcid=0000-0003-3660-2962" target="_blank">0000-0003-3660-2962</a></p>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                                        <i class="fab fa-brands fa-linkedin fa-lg" style="color: #3b5998;"></i>
-                                        <p class="mb-0"><a href="https://www.linkedin.com/in/charnon-pat/" target="_blank">Charnon Pattiyanon</a></p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="card mb-4 shadow">
-                            <div class="card-body" style="font-size: 10pt;">
-                                <p class="mb-4"><b><span class="text-primary font-italic me-1">Basic Information</span></b></p>
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <p class="mb-0"><b>Name</b></p>
-                                    </div>
-                                    <div class="col-sm-9">
-                                        <p class="text-muted mb-0">Charnon Pattiyanon, Ph.D.<br/>ดร. ชานนทร์ ภัทรธิยานนท์</p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <p class="mb-0"><b>Email</b></p>
-                                    </div>
-                                    <div class="col-sm-9">
-                                        <p class="text-muted mb-0"><a href="mailto:charnon.pat@gmail.com">charnon.pat@gmail.com</a> | <a href="mailto:charnon@cmkl.ac.th">charnon@cmkl.ac.th</a></p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <p class="mb-0"><b>Mobile</b></p>
-                                    </div>
-                                    <div class="col-sm-9">
-                                        <p class="text-muted mb-0">(+66) 098-098-4010</p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <p class="mb-0"><b>Hometown</b></p>
-                                    </div>
-                                    <div class="col-sm-9">
-                                        <p class="text-muted mb-0">Bangkok, Thailand</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-4 shadow">
-                            <div class="col-md-12">
-                                <div class="card mb-4 mb-md-0 shadow">
-                                    <div class="card-body">
-                                        <p class="mb-4"><b><span class="text-primary font-italic me-1">Education Background</span></b></p>
-                                        <dl>
-                                            <!-- <dt>&#129351; <b>Doctoral Degree</b></dt> -->
-                                            <dd style="font-size: 10pt;">
-                                                &#129351; <b style="color: darkred;">Doctor of Philosophy (Ph.D.) in Information Science</b> 
-                                                <ul>
-                                                    <li><b>Institution:</b> Japan Advanced Institute of Science and Technology (JAIST) - 北陸先端科学技術大学院大学, Ishikawa, Japan &#127471&#127477;</li>
-                                                    <li><b>Scholarship:</b> <em>MEXT Scholarship (Monbukagakusho)</em></li>
-                                                    <li><b>Period:</b> <em style="color: darkslateblue;">Sep 2019 - Mar 2023</em> (3.5 Years)</li>
-                                                    <li><b>Dissertation Topic:</b> <em>"Security Weakness and Privacy Preservation Analysis of SSI Management Systems using Information Retrieval and System Modeling"</em>, supervised by Prof. Toshiaki Aoki, Division of Interdisciplinary Sciences, JAIST.</li>
-                                                </ul>
-                                            </dd>
-                                            <!-- <dt>&#127891; <b>Master Degree</b></dt> -->
-                                            <dd style="font-size: 10pt;">
-                                                &#127891; <b style="color: darkred;">Master of Science (M.Sc.) in Software Engineering</b>
-                                                <ul>
-                                                    <li><b>Institution:</b> Chulalongkorn University, Bangkok, Thailand &#127481&#127469;</li>
-                                                    <li><b>Period:</b> <em style="color: darkslateblue;">Aug 2015 - Sep 2017</em> (2 Years)</li>
-                                                    <li><b>Thesis Topic:</b> <em>"Quality Assessment Model for Object-Oriented Design Patterns Under Development"</em>, supervised by Assoc. Prof. Twittie Senivongse, Department of Computer Engineering, Faculty of Engineering, CU.</li>
-                                                </ul>
-                                                 
-                                                 
-                                            </dd>
-                                            <!-- <dt>&#127890; <b>Bachelor Degree</b></dt> -->
-                                            <dd style="font-size: 10pt;">
-                                                &#127890; <b style="color: darkred;">Bachelors of Engineering (B.Eng.) in Computer Engineering (International Program)</b>
-                                                <ul>
-                                                    <li><b>Institution:</b> King Mongkut's University of Technology Thonburi (KMUTT), Bangkok, Thailand &#127481&#127469;</li>
-                                                    <li><b>Period:</b> <em style="color: darkslateblue;">Aug 2010 - Sep 2014</em> (4 Years)</li>
-                                                    <li><b>Senior Project:</b> <em>"Smart Sign-Language Dictionary Mobile Application using Image Processing"</em>, supervised by Asst. Prof. Sanan Srakeaw, Department of Computer Engineering, Faculty of Engineering, KMUTT.</li>
-                                                </ul>
-                                            </dd>
-                                        </dl>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br/>
-                <div class="row" id="about_me">
-                    <div class="col-md-12">
-                        <div class="card mb-lg-12 shadow">
-                            <div class="card-body">
-                                <p class="mb-4"><b><span class="text-primary font-italic me-1">About Me and My Research Interests</span></b></p>
-                                <p>
-                                    Dr. Charnon is a dedicated academic researcher with a deep interest in all facets of <b>software engineering</b>. His areas of expertise include <b>information security</b>, <b>personal data protection</b>, and <b>identity and access management</b>. He is also an active member of communities that leverage <b>formal methods</b> such as <b>formal specification</b>, <b>formal verification</b>, <b>model checking</b>, and <b>static program analysis</b>.
-                                </p>
-                                <p>
-                                    In addition to his foundational knowledge, Dr. Charnon is passionate about emerging technologies, including <b>blockchain</b>, <b>Bitcoin</b>, <b>decentralized and self-sovereign identity</b>, <b>consensus mechanisms</b>, and other <b>decentralized technologies</b>. He is also actively expanding his expertise in <b>natural language processing (NLP)</b> and <b>artificial intelligence (AI) engineering and infrastructure</b>.
-                                </p>
-                                <p>
-                                    Dr. Charnon has significant experience in diverse industries and domains. As <b>a technical team lead</b> and <b>senior software engineer</b> at <b>G-Able Co., Ltd.</b>, he implemented identity and access management solutions while gaining hands-on experience in various implementation projects. During his time in the industry, he honed his skills as a mentor, successfully coaching junior software engineers and finding great satisfaction in teaching and knowledge-sharing. This passion for teaching ultimately inspired him to pursue a Ph.D. in Japan.
-                                </p>
-                                <p>
-                                    Motivated by a desire to cultivate an exceptional learning environment in Thailand, Dr. Charnon finds immense fulfillment in teaching. He treasures the moments when his friends, juniors, and students experience the joy of understanding complex concepts. Currently serving as the <b>Assistant Director of IT and an Instructor</b> at <b>CMKL University</b>, Dr. Charnon strongly believes that his academic journey equips him with the intellectual foundation to inspire and educate the next generation of youth in Thailand.
-                                </p>
-                                <p>
-                                    In addition to my passion for learning, I am also an avid photographer and traveler who values documenting the world's wonders. 
-                                    My Instagram account is where I'd love to show off some of my work.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br/>
-                <div class="row" id="current_work">
-                    <div class="col-md-12">
-                        <div class="card mb-lg-12 shadow">
-                            <div class="card-body">
-                                <p class="mb-4"><b><span class="text-primary font-italic me-1">Current Work - In-Progress</span></b></p>
-                                <ul>
-                                    <li>
-                                        Pattiyanon, C. and Aoki, T. (2024). SSI-specific weakness classification using cross-domain knowledge graph and recommendations. (<u>To be submitted</u>). 
-                                    </li>
-                                    <li>
-                                        Pattiyanon, C.; Tomita, T. and Aoki, T. (2024). An Approach for Analyzing Data Privacy and Security During Data Sharing in SSI Systems. (<u>To be submitted</u>).
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br/>
-                <div class="row" id="publications">
-                    <div class="col-md-12">
-                        <div class="card mb-lg-12 shadow">
-                            <div class="card-body">
-                                <p class="mb-4"><b><span class="text-primary font-italic me-1">Publications</span></b></p>
-                                <b style="color: darkred;">Journal Articles</b>
-                                <ul>
-                                    <li>
-                                        <b>Pattiyanon, C.</b> and Aoki, T. (2022). Compliance SSI System Property Set to Laws, Regulations, and Technical Standards. <em>IEEE Access</em>, volume 10, pages 99370-99393. doi:<a href="https://doi.org/10.1109/ACCESS.2022.3204112" target="_blank">10.1109/ACCESS.2022.3204112</a>.<br/><b>Q1, Impact Factor: 0.927</b>
+<html lang="en">
 
-                                    </li>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="https://doi.org/10.1109/ACCESS.2022.3204112" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">DOI</button></a>
-                                        <a href="https://www.researchgate.net/publication/363316746_Compliance_SSI_System_Property_Set_to_Laws_Regulations_and_Technical_Standards" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">Research Gate</button></a> 
-                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#J_Pattiyanon_IEEE_Access_2022">
-                                            Cite
-                                        </button>
-                                        <div class="modal fade" id="J_Pattiyanon_IEEE_Access_2022" tabindex="-1" aria-labelledby="J_Pattiyanon_IEEE_Access_2022_Label" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="J_Pattiyanon_IEEE_Access_2022_Label">Cite this paper</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <b>Text:</b> <button onclick="copyText('J_Pattiyanon_IEEE_Access_2022_Text');" class="btn btn-sm btn-outline-primary">Copy</button>
-                                                        <textarea id="J_Pattiyanon_IEEE_Access_2022_Text" class="form-control" type="text" aria-label="Disabled input example" rows="4" style="resize: none;" disabled>Pattiyanon, C. and Aoki, T. (2020). Compliance SSI System Property Set to Laws, Regulations, and Technical Standards. IEEE Access, volume 10, pages 99370-99393. doi: 10.1109/ACCESS.2022.3204112.</textarea>
-                                                        <b>Bibtex:</b> <button onclick="copyText('J_Pattiyanon_IEEE_Access_2022_Bib');" class="btn btn-sm btn-outline-primary">Copy</button>
-                                                        <textarea id="J_Pattiyanon_IEEE_Access_2022_Bib" class="form-control" type="text" aria-label="Disabled input example" rows="11" style="resize: none; white-space: pre;" disabled>@article{Pattiyanon2022IEEEAccess,
-        author  = "Pattiyanon, Charnon and Aoki, Toshiaki",
-        journal = "{IEEE Access}"", 
-        title   = "{Compliance SSI System Property Set to Laws, Regulations, and Technical Standards}", 
-        year    = 2022,
-        volume  = "10",
-        number  = "",
-        pages   = "99370--99393",
-        doi     = "10.1109/ACCESS.2022.3204112"
-    }</textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                </ul>
-                                <b style="color: darkred">Conference Papers</b>
-                                <ul>
-                                    <li>
-                                        Wongsekleo, P.; Nakpaen, L.; Cherntanomwong, P. and <b>Pattiyanon, C.</b> (2024). Time Reduction for Collecting Fingerprint Data in Indoor Positioning Systems with Generated Synthetic Data by Ensemble Models and GANs. In <em>Proceedings of the 19th International Joint Symposium on Artificial Intelligence and Natural Language Processing - iSAI-NLP 2024</em>, November 13-14, 2024, Chonburi, Thailand. Doi: <a href="https://www.doi.org/10.1109/iSAI-NLP64410.2024.10799319">10.1109/iSAI-NLP64410.2024.10799319</a>.
-                                    </li>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="https://doi.org/10.1109/iSAI-NLP64410.2024.10799319" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">DOI</button></a>
-                                        <a href="https://www.researchgate.net/publication/387207827_Time_Reduction_for_Collecting_Fingerprint_Data_in_Indoor_Positioning_Systems_with_Generated_Synthetic_Data_by_Ensemble_Models_and_GANs" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">Research Gate</button></a>
-                                        <a href="/assets/ISAI-NLP_Certificate-Prab.pdf" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">Certificate</button></a>
-                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#P_Wongsekleo_iSAI_NLP_2024">
-                                            Cite
-                                        </button>
-                                        <div class="modal fade" id="P_Wongsekleo_iSAI_NLP_2024" tabindex="-1" aria-labelledby="P_Wongsekleo_iSAI_NLP_2024" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="P_Wongsekleo_iSAI_NLP_2024_Label">Cite this paper</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <b>Text:</b> <button onclick="copyText('P_Wongsekleo_iSAI_NLP_2024_Text');" class="btn btn-sm btn-outline-primary">Copy</button>
-                                                        <textarea id="P_Wongsekleo_iSAI_NLP_2024_Text" class="form-control" type="text" aria-label="Disabled input example" rows="7" style="resize: none;" disabled>Wongsekleo, P.; Nakpaen, L.; Cherntanomwong, P. and Pattiyanon, C. (2024). Time Reduction for Collecting Fingerprint Data in Indoor Positioning Systems with Generated Synthetic Data by Ensemble Models and GANs. In Proceedings of the 19th International Joint Symposium on Artificial Intelligence and Natural Language Processing - iSAI-NLP 2024, November 13-14, 2024, Chonburi, Thailand. Doi: 10.1109/iSAI-NLP64410.2024.10799319</textarea>
-                                                        <b>Bibtex:</b> <button onclick="copyText('P_Wongsekleo_iSAI_NLP_2024_Bib');" class="btn btn-sm btn-outline-primary">Copy</button>
-                                                        <textarea id="C_Pattiyanon_ICISSP_2022_Bib" class="form-control" type="text" aria-label="Disabled input example" rows="9" style="resize: none; white-space: pre;" disabled>@inproceedings{PWongsekleo2024,
-        title       = "{Time Reduction for Collecting Fingerprint Data in Indoor Positioning Systems with Generated Synthetic Data by Ensemble Models and GANs}",
-        booktitle   = "{Proceedings of the 19th International Joint Symposium on Artificial Intelligence and Natural Language Processing}",
-        series      = "{iSAI-NLP 2024}",
-        doi         = "{10.1109/iSAI-NLP64410.2024.10799319}",
-        author      = "{Wongsekleo, Prab and Nakpean, Lapat and Cherntanomwong, Panarat and Pattiyanon, Charnon}",
-        year        = 2024,
-    }</textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <br/>
-                                    <li>
-                                        Nakpaen, L.; Wongsekleo, P.; Cherntanomwong, P. and <b>Pattiyanon, C.</b> (2024). Building RSSI-based Indoor Positioning Fingerprint Maps using Android-based Coordination. In <em>Proceedings of the 19th International Joint Symposium on Artificial Intelligence and Natural Language Processing - iSAI-NLP 2024</em>, November 13-14, 2024, Chonburi, Thailand. Doi:<a href="https://www.doi.org/10.1109/iSAI-NLP64410.2024.10799385">10.1109/iSAI-NLP64410.2024.10799385</a>.
-                                    </li>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="https://doi.org/10.1109/iSAI-NLP64410.2024.10799385" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">DOI</button></a>
-                                        <a href="https://www.researchgate.net/publication/387191247_Building_RSSI-based_Indoor_Positioning_Fingerprint_Maps_using_Android-based_Coordination" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">Research Gate</button></a>
-                                        <a href="/assets/ISAI-NLP_Certificate-Lapat.pdf" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">Certificate</button></a>
-                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#L_Nakpaen_iSAI_NLP_2024">
-                                            Cite
-                                        </button>
-                                        <div class="modal fade" id="L_Nakpaen_iSAI_NLP_2024" tabindex="-1" aria-labelledby="L_Nakpaen_iSAI_NLP_2024" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="L_Nakpaen_iSAI_NLP_2024_Label">Cite this paper</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <b>Text:</b> <button onclick="copyText('L_Nakpaen_iSAI_NLP_2024_Text');" class="btn btn-sm btn-outline-primary">Copy</button>
-                                                        <textarea id="L_Nakpaen_iSAI_NLP_2024_Text" class="form-control" type="text" aria-label="Disabled input example" rows="7" style="resize: none;" disabled>Nakpaen, L.; Wongsekleo, P.; Cherntanomwong, P. and Pattiyanon, C. (2024). Building RSSI-based Indoor Positioning Fingerprint Maps using Android-based Coordination. In Proceedings of the 19th International Joint Symposium on Artificial Intelligence and Natural Language Processing - iSAI-NLP 2024, November 13-14, 2024, Chonburi, Thailand. Doi:10.1109/iSAI-NLP64410.2024.10799385.</textarea>
-                                                        <b>Bibtex:</b> <button onclick="copyText('L_Nakpaen_iSAI_NLP_2024_Bib');" class="btn btn-sm btn-outline-primary">Copy</button>
-                                                        <textarea id="L_Nakpaen_iSAI_NLP_2024_Bib" class="form-control" type="text" aria-label="Disabled input example" rows="9" style="resize: none; white-space: pre;" disabled>@inproceedings{LNakpaen2024,
-        title       = "{Building RSSI-based Indoor Positioning Fingerprint Maps using Android-based Coordination}",
-        booktitle   = "{Proceedings of the 19th International Joint Symposium on Artificial Intelligence and Natural Language Processing}",
-        series      = "{iSAI-NLP 2024}",
-        doi         = "{10.1109/iSAI-NLP64410.2024.10799385}",
-        author      = "{Nakpean, Lapat and Wongsekleo, Prab and Cherntanomwong, Panarat and Pattiyanon, Charnon}",
-        year        = 2024,
-    }</textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <br/>
-                                    <li>
-                                        <b>Pattiyanon, C.</b> and Aoki, T. (2022). Analysis and Enhancement of Self-sovereign Identity System Properties Compiling Standards and Regulations. 
-                                        In <em>Proceedings of the 8th International Conference on Information Systems Security and Privacy - ICISSP 2022</em>, ISBN 978-989-758-553-1; ISSN 2184-4356, pages 133-144, doi:<a href="https://doi.org/10.5220/0010877300003120" target="_blank">10.5220/0010877300003120</a>.
-                                    </li>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="https://doi.org/10.5220/0010877300003120" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">DOI</button></a>
-                                        <a href="https://www.researchgate.net/publication/357955200_Analysis_and_Enhancement_of_Self-sovereign_Identity_System_Properties_Compiling_Standards_and_Regulations" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">Research Gate</button></a>
-                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#C_Pattiyanon_ICISSP_2022">
-                                            Cite
-                                        </button>
-                                        <div class="modal fade" id="C_Pattiyanon_ICISSP_2022" tabindex="-1" aria-labelledby="C_Pattiyanon_ICISSP_2022_Label" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="C_Pattiyanon_ICISSP_2022_Label">Cite this paper</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <b>Text:</b> <button onclick="copyText('C_Pattiyanon_ICISSP_2022_Text');" class="btn btn-sm btn-outline-primary">Copy</button>
-                                                        <textarea id="C_Pattiyanon_ICISSP_2022_Text" class="form-control" type="text" aria-label="Disabled input example" rows="7" style="resize: none;" disabled>Pattiyanon, C. and Aoki, T. (2022). Analysis and Enhancement of Self-sovereign Identity System Properties Compiling Standards and Regulations. In Proceedings of the 8th International Conference on Information Systems Security and Privacy - ICISSP, ISBN 978-989-758-553-1; ISSN 2184-4356, pages 133-144.</textarea>
-                                                        <b>Bibtex:</b> <button onclick="copyText('C_Pattiyanon_ICISSP_2022_Bib');" class="btn btn-sm btn-outline-primary">Copy</button>
-                                                        <textarea id="C_Pattiyanon_ICISSP_2022_Bib" class="form-control" type="text" aria-label="Disabled input example" rows="9" style="resize: none; white-space: pre;" disabled>@inproceedings{Pattiyanon2022ICISSP,
-        title       = "{Analysis and Enhancement of Self-sovereign Identity System Properties Compiling Standards and Regulations}",
-        doi         = "10.5220/0010877300003120",
-        booktitle   = "Proceedings of the 8th International Conference on Information Systems Security and Privacy",
-        series      = "ICISSP 2022",
-        author      = "Pattiyanon, Charnon and Aoki, Toshiaki",
-        year        = 2022,
-        pages       = "133--144",
-    }</textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <br/>
-                                    <li>
-                                        <b>Pattiyanon, C.</b>; Aoki, T. and Ishii, D. (2022). A Method for Detecting Common Weaknesses in Self-Sovereign Identity Systems Using Domain-Specific Models and Knowledge Graph. 
-                                        In <em>Proceedings of the 10th International Conference on Model-Driven Engineering and Software Development - MODELSWARD 2022</em>, <br/> ISBN 978-989-758-550-0; ISSN 2184-4348, pages 219-226, doi:<a href="https://doi.org/10.5220/0010824900003119" target="_blank">10.5220/0010824900003119</a>.
-                                    </li>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="https://doi.org/10.5220/0010824900003119" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">DOI</button></a>
-                                        <a href="https://www.researchgate.net/publication/357955270_A_Method_for_Detecting_Common_Weaknesses_in_Self-Sovereign_Identity_Systems_Using_Domain-Specific_Models_and_Knowledge_Graph" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">Research Gate</button></a>
-                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#C_Pattiyanon_MODELSWARD_2022">
-                                            Cite
-                                        </button>
-                                        <div class="modal fade" id="C_Pattiyanon_MODELSWARD_2022" tabindex="-1" aria-labelledby="C_Pattiyanon_MODELSWARD_2022_Label" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="C_Pattiyanon_MODELSWARD_2022_Label">Cite this paper</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <b>Text:</b> <button onclick="copyText('C_Pattiyanon_MODELSWARD_2022_Text');" class="btn btn-sm btn-outline-primary">Copy</button>
-                                                        <textarea id="C_Pattiyanon_MODELSWARD_2022_Text" class="form-control" type="text" aria-label="Disabled input example" rows="7" style="resize: none;" disabled>Pattiyanon, C.; Aoki, T. and Ishii, D. (2022). A Method for Detecting Common Weaknesses in Self-Sovereign Identity Systems Using Domain-Specific Models and Knowledge Graph. In Proceedings of the 10th International Conference on Model-Driven Engineering and Software Development - MODELSWARD, ISBN 978-989-758-550-0; ISSN 2184-4348, pages 219-226.</textarea>
-                                                        <b>Bibtex:</b> <button onclick="copyText('C_Pattiyanon_MODELSWARD_2022_Bib');" class="btn btn-sm btn-outline-primary">Copy</button>
-                                                        <textarea id="C_Pattiyanon_MODELSWARD_2022_Bib" class="form-control" type="text" aria-label="Disabled input example" rows="9" style="resize: none; white-space: pre;" disabled>@inproceedings{Pattiyanon2022MODELSWARD,
-        title       = "{A Method for Detecting Common Weaknesses in Self-Sovereign Identity Systems Using Domain-Specific Models and Knowledge Graph}",
-        doi         = "10.5220/0010824900003119",
-        booktitle   = "Proceedings of the 10th International Conference on Model-Driven Engineering and Software Development",
-        services    = "{MODELSWARD 2022}",
-        author      = "Pattiyanon, Charnon and Aoki, Toshiaki and Ishii, Daisuke",
-        year        = 2022,
-        pages       = "219--226",
-    }</textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <br/>
-                                    <li>
-                                        <b>Pattiyanon, C.</b> and Senivongse, T. (2017). Quality model for assessing object-oriented design patterns under development. 
-                                        In <em>Proceedings of the 2017 18th IEEE/ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing - SNPD 2017</em>, pages 377-383, doi:<a href="https://doi.org/10.1109/SNPD.2017.8022749" target="_blank">10.1109/SNPD.2017.8022749</a>.
-                                    </li>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="https://doi.org/10.1109/SNPD.2017.8022749" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">DOI</button></a>
-                                        <a href="https://www.researchgate.net/publication/319413527_Quality_model_for_assessing_object-oriented_design_patterns_under_development" target="_blank" style="margin: 0 5px;"><button class="btn btn-outline-secondary">Research Gate</button></a> 
-                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#C_Pattiyanon_SNPD_2017">
-                                            Cite
-                                        </button>
-                                        <div class="modal fade" id="C_Pattiyanon_SNPD_2017" tabindex="-1" aria-labelledby="C_Pattiyanon_SPND_2017_Label" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="C_Pattiyanon_SPND_2017_Label">Cite this paper</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <b>Text:</b> <button onclick="copyText('C_Pattiyanon_SNPD_2017_Text');" class="btn btn-sm btn-outline-primary">Copy</button>
-                                                        <textarea id="C_Pattiyanon_SNPD_2017_Text" class="form-control" type="text" aria-label="Disabled input example" rows="6" style="resize: none;" disabled>Pattiyanon, C. and Senivongse, T. (2017). Quality model for assessing object-oriented design patterns under development. In Proceedings of the 2017 18th IEEE/ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing - SNPD, pages 377-383. DOI: 10.1109/SNPD.2017.8022749.</textarea>
-                                                        <b>Bibtex:</b> <button onclick="copyText('C_Pattiyanon_SNPD_2017_Bib');" class="btn btn-sm btn-outline-primary">Copy</button>
-                                                        <textarea id="C_Pattiyanon_SNPD_2017_Bib" class="form-control" type="text" aria-label="Disabled input example" rows="10" style="resize: none; white-space: pre;" disabled>@inproceedings{Pattiyanon2017,
-        title       = "{Quality Model for Assessing Object-Oriented Design Patterns Under Development}"",
-        url         = "{https://ieeexplore.ieee.org/document/8022749/}"",
-        doi         = "10.1109/SNPD.2017.8022749",
-        booktitle   = "Proceedings of the 2017 18th IEEE/ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing",
-        series      = "SNPD 2017",
-        author      = "Pattiyanon, Charnon and Senivongse, Twittie",
-        year        = 2017,
-        pages       = "377--383",
-    }</textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>                                    
-                                    </div>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br/>
-                <div class="row" id="participations">
-                    <div class="col-md-12">
-                        <div class="card mb-lg-12 shadow">
-                            <div class="card-body">
-                                <p class="mb-4"><b><span class="text-primary font-italic me-1">Academic Participations</span></b></p>
-                                <b style="color: darkred;">International Conferences</b>
-                                <ul>
-                                    <li>The 9th Conference on Formal Methods in Software Engineering, <b>FormaliSE 2021</b>. February 2021. <u>Sub-Reviewer</u>.</li>
-                                    <li>The 15th Theoretical Aspects of Software Engineering Conference, <b>TASE 2021</b>. April 2021. <u>Sub-Reviewer</u>.</li>
-                                    <li>The 26th IEEE Pacific Rim International Symposium on Dependable Computing, <b>PRDC 2021</b>. August 2021. <u>Sub-Reviewer</u>.</li>
-                                    <li>The 10th Conference on Formal Methods in Software Engineering, <b>FormaliSE 2022</b>. February 2022. <u>Sub-Reviewer</u>.</li>
-                                    <li>The 27th IEEE Pacific Rim International Symposium on Dependable Computing, <b>PRDC 2022</b>. August 2022. <u>Sub-Reviewer</u>.</li>
-                                    <li>The 5th International Conference on Machine Learning and Intelligent Systems, <b>MLIS 2023</b>. June 2023. <u>Reviewer</u>.</li>
-                                    <li>The 9th International Conference on Fuzzy Systems and Data Mining, <b>FSDM 2023</b>. July 2023. <u>Reviewer</u>.</li>
-                                    <li>The 10th International Conference on Fuzzy Systems and Data Mining, <b>FSDM 2024</b>, June 2024. <u>Reviewer</u>.</li>
-                                </ul>
-                                <b style="color: darkred;">International Journals</b>
-                                <ul>
-                                    <li>Computer & Security, <b>COSE</b>,  2023. <u>Reviewer</u>.  <a href="/assets/Certificate_COSE_Recognised.pdf">[Certificate]</a></li>
-                                    <li>Computer & Security, <b>COSE</b>,  2024. <u>Reviewer</u>. <a href="/assets/Certificate_COSE-2023-09-to-2024-01.pdf">[Certificate]</a> </li>
-                                </ul>
-                                <b style="color: darkred;">Talks and Seminars</b>
-                                <ul>
-                                    <li>Joint Seminar with Ueda Laboratory of Waseda University, Collaboration Room 6, JAIST. (February 20th, 2020). <u>Speaker</u></li>
-                                    <li>Joint Seminar with Kishi Laboratory of Waseda University, Seminar Room A, Hiinoki Cultural Complex. (February 22nd, 2023). <u>Speaker</u></li>
-                                    <li>"Scalability and Security in AI-Driven Industrial Automation" Panel Discussion in the AI Engineering and Innovation Summit 2023, Grand Hall, Floor 3 (West), True Digital Park. (December 7th-8th. 2023). <u>Moderator</u>. <a href="https://www.youtube.com/watch?v=t0H0NW0hBYM" target="_blank">[Highlight Link]</a> </li>
-                                    <li>"From industry to academia: Dr. Charnon Pattiyanon's inspiring journey" Interview with Blue Tech Wave Media, during BKNIX Peering Forum 2024 Event, Grand Hall, Floor 9, Carlton Hotel Sukhumvit. (May 30th-31st, 2024). <u>Interviewee</u>. <a href="https://btw.media/company-stories/from-industry-to-academia-dr-charnon-pattiyanons-inspiring-journey/" target="_blank">[Link]</a></li>
-                                    <li>“Emerging Technology: AI,” at the Senior Security Studies Program 2024, Strategic Studies Center, National Defense Studies Institute (NDSI), Chonburi, Thailand (August 7, 2024). <u>Guest Speaker</u>. </li>
-                                    <li>"AI and Digital Health" Panel Discussion in the AI Engineering and Innovation Summit 2024, The Ritz-Carlton Hotel, Bangkok. (December 13, 2024). <u>Moderator</u>. <a href="https://ngthai.com/uncategorized/75809/ai-in-digital-healthcare/" target="_blank">[Link]</a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br/>
-                <div class="row" id="participations">
-                    <div class="col-md-12">
-                        <div class="card mb-lg-12 shadow">
-                            <div class="card-body">
-                                <p class="mb-4"><b><span class="text-primary font-italic me-1">Work Experience</span></b></p>
-                                <dl>
-                                    <dt style="color: darkred">August 2023 - Present</dt></br>
-                                    <dd style="font-size: 10pt;">
-                                        <ul>
-                                            <li><b style="color: darkgreen;">Assistant Director of IT</b></li>
-                                            <ul>
-                                                <li><b>Organization:</b> <i class="fa-solid fa-building-columns fa-lg" style="color:red"></i> CMKL University, Bangkok, Thailand &#127481&#127469;</li>
-                                                <li><b>Job Description:</b></li>
-                                                <ul>
-                                                    <li>Oversee IT operations and supervise systems and IT staff.</li>    
-                                                    <li>Develop strategy and implement solutions relates to the organization's IT infrastructure (computer and
-                                                        information systems, security, organizational data, communication systems)</li>
-                                                    <li>Assist in preparation, manage, and track the IT department's annual budget.</li>
-                                                    <li>Consult senior-level stakeholders across the entire organization to identify business and technology needs and to
-                                                        optimize the use of information technology.</li>
-                                                    <li>Ensure smooth delivery and operation of IT services by monitoring the system's performance.</li>
-                                                    <li>Create processes and standards for selection, implementation, and support of systems.</li>
-                                                    <li>Provide direction, guidance, and training to IT staff.</li>
-                                                </ul>
-                                            </ul>
-                                            </br>
-                                            <li><b style="color: darkgreen">Instructor (Lecturer in AI and Computer Engineering Program)</b></li>
-                                            <ul>
-                                                <li><b>Organization:</b> <i class="fa-solid fa-building-columns fa-lg" style="color:red"></i> CMKL University, Bangkok, Thailand &#127481&#127469;</li>
-                                                <li><b>Job Description:</b></li>
-                                                <ul>
-                                                    <li>Being a main instructor for several undergraduate courses in cybersecurity, including:</li>
-                                                    <ul>
-                                                        <li>SEC-101: Data and Information Fundamentals (2 Credits)</li>
-                                                        <li>SEC-201: Data Privacy, Security, and Integrity (4 Credits)</li>
-                                                        <li>SEC-204: Security Policy and Processes (4 Credits)</li>
-                                                        <li>SEC-205: Distributed Ledger and Blockchain (4 Credits)</li>
-                                                        <li>SEC-301: Security Challenges in Modern AI Systems (2 Credits)</li>
-                                                    </ul> 
-                                                    <li>Being an instructor for a graduate course in cybersecurity, including: </li>
-                                                    <ul>
-                                                        <li>18-631: Introduction to Information Security (12 Credits)</li>
-                                                    </ul>
-                                                    <li>Prepare course materials, assessment items, and grading during the semester.</li>
-                                                    <li>Develop curriculum / program content & offer at least 12 credits per semester on related
-                                                        competencies.</li>
-                                                    <li>Develop and deliver engaging and innovative lectures, seminars, and laboratory sessions.</li>
-                                                    <li>Supervise undergraduate and graduate student projects, theses, and dissertations.</li>
-                                                    <li>Participate in academic advising and mentoring of students to foster their academic and
-                                                        personal growth.</li>
-                                                    <li>Contribute to curriculum development and program enhancement in line with industry
-                                                        trends and academic standards.</li>
-                                                </ul>
-                                            </ul>
-                                        </ul>
-                                    </dd>
-                                    </br>
-                                    <dt style="color: darkred">November 2018 - May 2019</dt></br>
-                                    <dd style="font-size: 10pt;">
-                                        <ul>
-                                            <li><b style="color: darkgreen;">Senior Software Engineer and Technical Team Leader</b></li>
-                                            <ul>
-                                                <li><b>Organization:</b> <i class="fa-solid fa-passport fa-lg" style="color:darkgrey"></i> G-Able Company Limited, Bangkok Thailand &#127481&#127469;</li>
-                                                <li><b>Period:</b> 7 months</li>
-                                                <li><b>Job Description:</b></li>
-                                                <ul>
-                                                    <li>Implement identity and access management solutions in customer sites.</li>
-                                                    <li>Collaborate with customers and gather client requirements.</li>
-                                                    <li>Develop an architecture and design the solution for customers.</li>
-                                                    <li>Develop specification documents to propose a custom solution to the customer.</li>
-                                                    <li>Develop custom modules to identity and access management systems for providing Single Sign-On (SSO) features.</li>
-                                                    <li>Lead and Collaborate with multiple developers in enterprise-level projects.</li>
-                                                    <li>Lead and manage task progress and ensure that the project can be delivered on time.</li>
-                                                    <li><em>Customer Domain Reference:</em> National Healthcare, Banking Company, Car Factory</li>
-                                                </ul>
-                                            </ul>
-                                        </ul>
-                                    </dd>
-                                    </br>
-                                    <dt style="color: darkred">September 2017 - November 2018</dt></br>
-                                    <dd style="font-size: 10pt;">
-                                        <ul>
-                                            <li><b style="color: darkgreen;">Software Engineer</b></li>
-                                            <ul>
-                                                <li><b>Organization:</b> <i class="fa-solid fa-passport fa-lg" style="color:darkgrey"></i> G-Able Company Limited, Bangkok Thailand &#127481&#127469;</li>
-                                                <li><b>Period:</b> 1 year and 1 month</li>
-                                                <li><b>Job Description:</b></li>
-                                                <ul>
-                                                    <li>Implement identity and access management solutions in customer sites.</li>
-                                                    <li>Develop custom modules to identity and access management systems for providing Single Sign-On (SSO) features.</li>
-                                                    <li>Collaborate with multiple developers in enterprise-level projects.</li>
-                                                    <li>Support system deployment with customers during the Product Verification Testing phase.</li>
-                                                    <li><em>Customer Domain Reference:</em> National Healthcare, Banking Company, Car Factory</li>
-                                                </ul>
-                                            </ul>
-                                        </ul>
-                                    </dd>
-                                    </br>
-                                    <dt style="color: darkred">April 2014 - October 2015</dt></br>
-                                    <dd style="font-size: 10pt;">
-                                        <ul>
-                                            <li><b style="color: darkgreen;">.NET Web Developer</b></li>
-                                            <ul>
-                                                <li><b>Organization:</b> <i class="fa-solid fa-store fa-lg" style="color:coral"></i> Vevo Systems Company Limited, Bangkok Thailand &#127481&#127469;</li>
-                                                <li><b>Period:</b> 1 year and 6 months</li>
-                                                <li><b>Job Description:</b></li>
-                                                <ul>
-                                                    <li>Develop e-commerce websites using ASP.NET C# and Bootstrap framework.</li>
-                                                    <li>Customize front-end interfaces of the e-commerce website to match with SME clients' branding using CSS and Javascript.</li>
-                                                    <li>Participate in the full stack development tasks with the team using the Scrum development processes.</li>
-                                                    <li>Work closely with SME clients to gather and extract system requirements for their e-commerce website.</li>
-                                                    <li>Participate in the client training session to walkthrough the use of the company product (i.e., e-commerce websites).</li>
-                                                    <li>Hold an on-call support via a ticketing system to support SME clients with website-related issues.</li>
-                                                </ul>
-                                            </ul>
-                                        </ul>
-                                    </dd>
-                                    </br>
-                                    <dt style="color: darkred">June 2013 - July 2013</dt></br>
-                                    <dd style="font-size: 10pt;">
-                                        <ul>
-                                            <li><b style="color: darkgreen;">Windows Application Developer (Internship Program)</b></li>
-                                            <ul>
-                                                <li><b>Organization:</b> <i class="fab fa-brands fa-microsoft fa-lg" style="color:deepskyblue"></i> Microsoft Innovation Center, Bangkok Thailand &#127481&#127469;</li>
-                                                <li><b>Period:</b> 2 months</li>
-                                                <li><b>Job Description:</b></li>
-                                                <ul>
-                                                    <li>Participate with the team to develop Windows 8 applications using ASP.NET and C#.</li>
-                                                    <li>Participate with the team to develop Windows Phone applications using ASP.NET and C#.</li>
-                                                    <li>Submit the developed application to the Windows application store.</li>
-                                                    <li>Participate with the team to develop a rythm/music game, using Unity and C#.</li>
-                                                </ul>
-                                            </ul>
-                                        </ul>
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card mb-6 text-white bg-dark shadow">
-                            <div class="card-body">
-                                <div class="wrapper">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-6 d-flex align-items-stretch">
-                                            <div class="contact-wrap w-100 p-md-5 p-4 py-5">
-                                                <h3 class="mb-4 text-muted">&#128232; Contact Me</h3>
-                                                <form method="POST" id="contact_form" action="https://formsubmit.co/11f1fcf33613df19c1b871de3e726a53" name="contactForm" class="needs-validation" target="_blank">
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control" name="name" id="name" placeholder="Name *" required>
-                                                            </div>
-                                                        </div>
-                                                        <p></p>
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <input type="email" class="form-control" name="email" id="email" placeholder="Email *" type="email" required>
-                                                            </div>
-                                                        </div>
-                                                        <p></p>
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control" name="_subject" id="subject" placeholder="Subject *" required>
-                                                            </div>
-                                                        </div>
-                                                        <p></p>
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message *" required></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <p></p>
-                                                        <input type="text" name="_honey" style="display:none">
-                                                        <p></p>
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <button type="submit" class="btn btn-primary">Send Message</button>
-                                                                <div class="submitting"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 d-flex align-items-stretch">
-                                            <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
-                                                <h3 class="text-muted"> &#128172; Contact Instruction</h3>
-                                                <p class="mb-4">
-                                                    I welcome academic and personal collaborations. The following services are available for you to request my assistance with:
-                                                    <ul>
-                                                        <li>Collaboration on research relating to my areas of interest.</li>
-                                                        <li>Request disclosure of the full text of my academic paper.</li>
-                                                        <li>Request for any academic contributions.</li>
-                                                    </ul>
-                                                    I will try my best to respond to you as soon as possible.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Charnon Academic Profile</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" rel="stylesheet" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: EasyFolio
+  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
+  * Updated: Feb 21 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Charnon Pattiyanon, Ph.D.</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/index.html" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li class="dropdown"><a href="/Publication.html"><span>Publications</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="/Publication.html#conference">Conference Papers</a></li>
+              <li><a href="/Publication.html#journal">Journal Articles</a></li>
+              <li><a href="/Publication.html#preprint">Preprints</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://www.facebook.com/toptenzc/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/chnpat/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/charnon-pat/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.researchgate.net/profile/Charnon-Pattiyanon" class="researchgate" target="_blank"><i class="fa fa-researchgate"></i></a>
+        <a href="https://orcid.org/my-orcid?orcid=0000-0003-3660-2962" class="orcid" target="_blank"><i class="fa fa-orcid"></i></a>
+        <a href="https://github.com/chnpat" class="github" target="_blank"><i class="fa fa-github"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h2>Secure Software in the Era of AI &amp; Decentralization</h2>
+            <p class="lead">"If you think technology can solve your security problems, then you don't understand your security problems and you don't understand technology." &mdash; <em>Bruce Schneier</em></p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+              <a href="/assets/file/CV - Formal - Blue - 2025.pdf" class="btn btn-primary">Download Full CV</a>
+              <a href="#contact" class="btn btn-outline">Let's Connect</a>
             </div>
-        </section>
-        <div class="footer-dark">
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 item text text-center">
-                            <b>Email: </b><a href="mailto:charnon@cmkl.ac.th" style="color:#3b5998; text-decoration: none;">charnon@cmkl.ac.th</a>,
-                                <a href="mailto:charnon.pat@gmail.com" style="color:#3b5998; text-decoration: none;">charnon.pat@gmail.com</a>
-                            <p><b>Carnegie Mellon - KMITL (CMKL) University</b></p>
-                            <p>1 Soi Chalongkrung 1, Ladkrabang, Bangkok, 10520, Thailand</p>
-                        </div>
-                        <div class="col item text-center outside">
-                            <a href="https://github.com/chnpat" target="_blank"><i class="fab fa-github fa-lg" style="color: #fff;"></i> Github</a> |
-                            <a href="https://www.instagram.com/chnpat/" target="_blank"><i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i> Instagram</a> |
-                            <a href="https://www.facebook.com/toptenzc/" target="_blank"><i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i> Facebook</a> |
-                            <a href="https://www.researchgate.net/profile/Charnon-Pattiyanon" target="_blank"><i class="fab fa-brands fa-researchgate fa-lg" style="color:lightseagreen"></i> Research Gate</a> |
-                            <a href="https://orcid.org/my-orcid?orcid=0000-0003-3660-2962" target="_blank"><i class="fab fa-brands fa-orcid fa-lg" style="color: yellowgreen;"></i> ORCID</a> |
-                            <a href="https://www.linkedin.com/in/charnon-pat/" target="_blank"><i class="fab fa-brands fa-linkedin fa-lg" style="color: #3b5998;"></i> Linkedin</a> 
-                        </div>
-                    </div>
-                    <p class="copyright">Charnon Pattiyanon &#169; 2022-2024</p>
-                </div>
-            </footer>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects Advised and Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Publications</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img src="assets/img/profile/profile-1.png" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
+              <div class="shape-1"></div>
+              <div class="shape-2"></div>
+            </div>
+          </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-        <script src="./index.js"></script>
-    </body>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Me</h2>
+        <!-- <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div> -->
+        <p>Welcome! I'm delighted for this opportunity to introduce myself and provide a deeper dive into my research expertise and the passions that drive my work.</p>
+      </div> <!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row align-items-center">
+          <div class="col-lg-5 position-relative">
+            <div class="about-image">
+              <img src="assets/img/profile/profile-square-2.jpg" alt="Profile Image" class="img-fluid rounded-4">
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-content">
+              <span class="subtitle">CMKL University</span>
+
+              <h2>Assistant Director of Information Technology &amp; Instructor</h2>
+
+              <p class="mb-4"><b style="color: var(--accent-color);">Dr. Charnon</b> is currently working as a researcher in academia with a keen interest in all aspects of <b>software engineering</b>. His expertise lies in <b>information security</b>, <b>personal data protection</b>, and <em>identity and access management</em>. In addition, he is active in communities that use <b>formal methods</b>, including <em>formal specification</em>, <em>formal verification</em>, <em>model checking</em>, and <em>static program analysis</em>. he is also deeply passionate about emerging <b>decentralized technologies</b> such as <em>blockchain</em>, <em>Bitcoin</em>, <em>decentralized and self-sovereign identity</em>, <em>consensus mechanisms</em>, and other forms of <em>decentralized applications</em>. Furthermore, he is actively expanding my knowledge and skill set in <b>natural language processing (NLP)</b> and <b>artificial intelligence (AI) engineering and infrastructure</b>.</p>
+
+              <div class="personal-info">
+                <div class="row g-4">
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Name</span>
+                      <span class="value">Charnon Pattiyanon, Ph.D.</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Phone</span>
+                      <span class="value"><a href="tel:66980984010">(+66) 098 098 4010</a></span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Location</span>
+                      <span class="value">Bangkok, Thailand</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Email</span>
+                      <span class="value"><a href="mailto:charnon@cmkl.ac.th">charnon@cmkl.ac.th</a></span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Occupation</span>
+                      <span class="value">Assistant Director of IT, Instructor</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Nationality</span>
+                      <span class="value">Thai</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="signature mt-4">
+                <div class="signature-image">
+                  <img src="assets/img/misc/signature-1.webp" alt="" class="img-fluid">
+                </div>
+                <div class="signature-info">
+                  <h4>Eliot Johnson</h4>
+                  <p>Adipiscing Elit, Lorem Ipsum</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
+        <h2>Research Interest</h2>
+        <!-- <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div> -->
+
+        <p></p>
+
+        <div class="row g-4 skills-animation">
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="color: var(--accent-color);">Software Engineering</h3>
+              <p>Requirement Engineering <br /> Software Design &amp; Development <br /> Software Testing <br /> Software Deployment &amp; Maintenance <br /> Formal Methods <br /> Formal Specification and Verification <br /> Model Checking</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+              <h3 style="color: var(--accent-color);">Security &amp; Privacy</h3>
+              <p>Security &amp; Privacy Analysis <br /> Security &amp; Privacy Governance <br /> Security &amp; Privacy Laws/Regulations <br /> Identity and Access Management <br /> Cybersecurity <br /> AI Security &amp; Privacy <br /> Cryptography</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+              <h3 style="color: var(--accent-color);">Decentralization</h3>
+              <p>Blockchain <br /> Bitcoin, Ethereum, Hyperledger <br /> On-chain/Off-chain Storage <br /> Decentralized Applications <br /> Consensus Mechanisms <br /> Self-Sovereign Identity <br /> Smart Contract</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <h3 style="color: var(--accent-color);">Artificial Intelligence</h3>
+              <p>Distributed AI Training and Inference <br /> Distributed Resource Management <br /> Natural Language Processing <br /> Large Language Model <br /> Automatic Speech Recognition <br /> Generative Adversarial Networks <br /> Object Detection </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Background and Experience</h2>
+        <!-- <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div> -->
+        <p>Background and experience highlights past experience and educational background.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12">
+            <div class="resume-wrapper">
+              <div class="resume-block">
+                <h2>Education</h2>
+                <p class="lead">Dr. Charnon's educational journey is a testament to his dedication and intellectual growth.</p>
+
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">Japan Advanced Institute of Science and Technology</h4>
+                      <p><em>Ishikawa, Japan</em></p>
+                      <span class="period">Oct, 2019 - Mar, 2023</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Doctor of Philosophy (Ph.D.) in Information Science</h3>
+                      <ul>
+                        <li><b>GPA:</b> 2.91 / 3.00</li>
+                        <li><b>Academic Advisor:</b> <a href="mailto:toshiaki@jaist.ac.jp">Prof. Toshiaki Aoki, Ph.D.</a></li>
+                        <li><b>Doctoral Dissertation Title:</b> Security Weakness and Privacy Preservation Analysis of SSI Management Systems using Information Retrieval and System Modeling</li>
+                        <li><b>Scholarship:</b> University-Recommended MEXT (Monbukagakusho)</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">Chulalongkorn University</h4>
+                      <p class="description"><em>Bangkok, Thailand</em></p>
+                      <span class="period">Oct, 2015 - Sep, 2017</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Master of Science (M.Sc.) in Software Engineering</h3>
+                      <ul>
+                        <li><b>GPA:</b> 4.00 / 4.00 (<em>Top of the Class</em>)</li>
+                        <li><b>Academic Advisor:</b> <a href="mailto:twittie.s@chula.ac.th">Assoc. Prof. Twittie Senivongse, Ph.D.</a></li>
+                        <li><b>Master Thesis Title:</b> Quality Assessment Model for Object-Oriented Design Patterns Under Development</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">King Mongkut's University of Technology Thonburi</h4>
+                      <p class="description"><em>Bangkok, Thailand</em></p>
+                      <span class="period">Aug, 2010 - Spe, 2014</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Bachelor of Engineering (B.Eng.) in Computer Engineering (International Program)</h3>
+                      <ul>
+                        <li><b>GPA:</b> 3.41 / 4.00 (<em>Second-Class Honoured</em>)</li>
+                        <li><b>Academic Advisor:</b> <a href="mailto:sanan.sra@kmutt.ac.th">Assoc. Prof. Sanan Srakeaw, Ph.D.</a></li>
+                        <li><b>Senior Project Title:</b> Smart Sign-Language Dictionary Mobile Application using Image Processing</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-block">
+                <h2>Academic Leadership and Experience</h2>
+                <p class="lead">Dr. Charnon's academic leadership roles underscore his significant contributions to both research innovation and educational excellence.</p>
+
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">CMKL University</h4>
+                      <p class="description"><em>Bangkok, Thailand</em></p>
+                      <span class="period">Aug, 2023 - Present</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Instructor (Artificial Intelligence and Computer Engineering Program)</h3>
+                      <p class="description">
+                        <ul>
+                          <li>Being an instructor for several undergraduate courses in Cybersecurity, including:</li>
+                          <ul>
+                            <li>SEC-101: Data and Information Fundamentals (2 Credits)</li>
+                            <li>SEC-201: Data Privacy, Security, and Integrity (4 Credits)</li>
+                            <li>SEC-204: Security Policy and Processes (4 Credits)</li>
+                            <li>SEC-205: Distributed Ledger and Blockchain (4 Credits)</li>
+                            <li>SEC-301: Security Challenges in Modern AI Systems (2 Credits)</li>
+                          </ul>
+                          <li>Being an instructor for an undergraduate course in AI, including:</li>
+                          <ul>
+                            <li>AIC-305: Bio-Inspired AI (4 Credits)</li>
+                          </ul>
+                          <li>Being an instructor for a graduate course in Cybersecurity, including:</li>
+                          <ul>
+                            <li>18-631: Introduction to Information Security (4 Credits)</li>
+                          </ul>
+                          <li>Prepare course materials, assessment items, and grading during the semester.</li>
+                          <li>Develop curriculum / program content & offer at least 12 credits per semester on related competencies.</li>
+                          <li>Develop and deliver engaging lectures, seminars, and laboratory sessions.</li>
+                          <li>Supervise student projects, theses, and dissertations.</li>
+                          <li>Participate in academic advising and mentoring of students to foster their academic and personal growth.</li>
+                          <li>Contribute to curriculum development and program enhancement in line with industry trends and academic standards.</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">Japan Advanced Institute of Science and Technology</h4>
+                      <p class="description"><em>Ishikawa, Japan</em></p>
+                      <span class="period">Jun, 2022 - Jul, 2022</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Internship Student Mentor</h3>
+                      <ul>
+                        <li>Being selected as a mentor for an internship student from the India Institute of Technology Gandhinagar for 2 months.</li>
+                        <li>Give advice and instruct the student on assignments and research activities.</li>
+                        <li>Review and provide feedback on the student assignments.</li>
+                      </ul>
+                      <p></p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">Japan Advanced Institute of Science and Technology</h4>
+                      <p class="description"><em>Ishikawa, Japan</em></p>
+                      <span class="period">Dec, 2021 - Feb, 2022</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Teaching Assistant</h3>
+                      <ul>
+                        <li>Being selected as one of the teaching assistants in the <em>Software Design Methodology</em> course for graduate students.</li>
+                        <li>Discuss and review weekly exercises by students.</li>
+                        <li>Criticize and evaluate students' presentations of the term project.</li>
+                        <li>Review and evaluate term reports with course instructors.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">Chulalongkorn University</h4>
+                      <p class="description"><em>Bangkok, Thailand</em></p>
+                      <span class="period">Jan, 2017 - May, 2017</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Teaching Assistant</h3>
+                      <ul>
+                        <li>Being selected as one of the teaching assistants in the <em>Software and System Analysis and Design</em> course of 120+ of 3rd year undergraduate students.</li>
+                        <li>Prepare and review weekly learning materials from instructors.</li>
+                        <li>Grade and review students' homework and projects along the course with a support from course instructor.</li>
+                        <li>Participate in the preparation of course materials for visually impaired students by creating a textual material from the textbooks and slides for generating braille manuscripts.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">Chulalongkorn University</h4>
+                      <p class="description"><em>Bangkok, Thailand</em></p>
+                      <span class="period">Jan, 2016 - Dec, 2016</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Teaching Assistant</h3>
+                      <ul>
+                        <li>Being selected as one of the teaching assistants in the <em>Python programming</em> course of 1st year undergraduate students. </li>
+                        <li>Facilitate and assist in the lecture of a section of 50+ students by responding to student questions and clarifying student misunderstanding.</li>
+                        <li>Give advice and instruct a section of programming lab.</li>
+                        <li>Review and prepare the solution for quizzes in the course.</li>
+                        <li>Grade and review students' score for the objective examination (both mid-term and final).</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              
+              
+              <div class="resume-block">
+                <h2>Work Experience</h2>
+                <p class="lead">Dr. Charnon's professional journey extends beyond academia, encompassing significant work experience in diverse industries where his expertise has translated into tangible impact.</p>
+
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">CMKL University</h4>
+                      <p class="description"><em>Bangkok, Thailand</em></p>
+                      <span class="period">Aug, 2023 - Present</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Assistant Director of IT</h3>
+                      <p class="description">
+                        <ul>
+                          <li>Oversee IT operations and supervise systems and IT staff.</li>
+                          <li>Develop strategy and implement solutions relates to the organization's IT infrastructure (computer and information systems, security, organizational data, communication systems)</li>
+                          <li>Assist in preparation, manage, and track the IT department's annual budget.</li>
+                          <li>Consult senior-level stakeholders across the entire organization to identifybusiness and technology needs and optimize the use of information technology.</li>
+                          <li>Ensure smooth delivery and operation of IT services by monitoring the system's performance.</li>
+                          <li>Create processes and standards for selection, implementation, and support of university-related IT systems.</li>
+                          <li>Provide direction, guidance, and training to IT staff.</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">G-ABLE Co., Ltd.</h4>
+                      <p class="description"><em>Bangkok, Thailand</em></p>
+                      <span class="period">Sep, 2017 - May, 2019</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Technical Lead and Senior Software Engineer</h3>
+                      <ul>
+                        <li>Implement identity and access management solutions in customer sites.</li>
+                        <li>Collaborate with customers and gather client requirements.</li>
+                        <li>Develop an architecture and design the solution for customers.</li>
+                        <li>Develop specification documents to propose a custom solution to the customer.</li>
+                        <li>Develop custom modules to identity and access management systems to provide Single Sign-On (SSO) features.</li>
+                        <li>Lead a team of 5 developers in enterprise-level projects.</li>
+                        <li>Manage project progress and ensure that the project can be delivered on time.</li>
+                      </ul>
+                      <p></p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">Vevo Systems Co., Ltd.</h4>
+                      <p class="description"><em>Bangkok, Thailand</em></p>
+                      <span class="period">Apr, 2014 - Oct, 2015</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Web Developer</h3>
+                      <ul>
+                        <li>Develop e-commerce websites using ASP.NET C# and Bootstrap framework.</li>
+                        <li>Customize front-end interfaces of the e-commerce website to match with SME clients' branding using CSS and Javascript.</li>
+                        <li>Participate in the full stack development tasks with the team using the Scrum development processes.</li>
+                        <li>Work closely with SME clients to gather and extract system requirements.</li>
+                        <li>Participate in the client training session to walk-through the company product.</li>
+                        <li>Hold an on-call support via a ticketing system to support SME clients with website-related issues</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">Microsoft Innovation Center (MIC)</h4>
+                      <p class="description"><em>Bangkok, Thailand</em></p>
+                      <span class="period">Jun, 2013 - Jul, 2013</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Windows Application Developer Intern</h3>
+                      <ul>
+                        <li>Being selected as a participant in an internship program.</li>
+                        <li>Participate with the team to develop Windows 8 applications using ASP.NET and C# as programming languages.</li>
+                        <li>Participate with the team to develop Windows Phone applications using ASP.NET and C# as programming languages.</li>
+                        <li>Submit the developed application to the Windows application store.</li>
+                        <li>Participate with the team to develop a rythm/music game, using Unity and C#.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <!-- <section id="portfolio" class="portfolio section"> -->
+
+      <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
+      </div> -->
+
+      <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All Work</li>
+              <li data-filter=".filter-web">Web Design</li>
+              <li data-filter=".filter-graphics">Graphics</li>
+              <li data-filter=".filter-motion">Motion</li>
+              <li data-filter=".filter-brand">Branding</li>
+            </ul>
+          </div>
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Design</span>
+                  <h3>Modern Dashboard Interface</h3>
+                  <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-10.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Graphics</span>
+                  <h3>Creative Brand Identity</h3>
+                  <p>Vestibulum id ligula porta felis euismod semper at vulputate.</p>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
+                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Motion</span>
+                  <h3>Product Animation Reel</h3>
+                  <p>Donec ullamcorper nulla non metus auctor fringilla dapibus.</p>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
+                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Branding</span>
+                  <h3>Luxury Brand Package</h3>
+                  <p>Aenean lacinia bibendum nulla sed consectetur elit.</p>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Design</span>
+                  <h3>E-commerce Platform</h3>
+                  <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Graphics</span>
+                  <h3>Digital Art Collection</h3>
+                  <p>Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+              </div>
+            </div> -->
+
+          <!-- </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" class="testimonials section light-background"> -->
+
+      <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
+      </div> -->
+      <!-- End Section Title -->
+
+      <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "slidesPerView": 1,
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Sed ut perspiciatis unde omnis</h2>
+                    <p>
+                      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    </p>
+                    <p>
+                      Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos. Amet quia sapiente laudantium nihil illo et assumenda sit cupiditate. Nam perspiciatis perferendis minus consequatur. Enim ut eos quo.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-m-7.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Saul Goodman</h3>
+                        <span>Client</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-m-7.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- End Testimonial Item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Nemo enim ipsam voluptatem</h2>
+                    <p>
+                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    </p>
+                    <p>
+                      Dolorem excepturi esse qui amet maxime quibusdam aut repellendus voluptatum. Corrupti enim a repellat cumque est laborum fuga consequuntur. Dolorem nostrum deleniti quas voluptatem iure dolorum rerum. Repudiandae doloribus ut repellat harum vero aut. Modi aut velit aperiam aspernatur odit ut vitae.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-f-8.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Sara Wilsson</h3>
+                        <span>Designer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-f-8.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- End Testimonial Item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>
+                      Labore nostrum eos impedit
+                    </h2>
+                    <p>
+                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    </p>
+                    <p>
+                      Itaque ut explicabo vero occaecati est quam rerum sed. Numquam tempora aut aut quaerat quia illum. Nobis quia autem odit ipsam numquam. Doloribus sit sint corporis eius totam fuga. Hic nostrum suscipit corrupti nam expedita adipisci aut optio.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-m-9.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Matt Brandon</h3>
+                        <span>Freelancer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-m-9.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- End Testimonial Item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2>Impedit dolor facilis nulla</h2>
+                    <p>
+                      Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    </p>
+                    <p>
+                      Omnis aspernatur accusantium qui delectus praesentium repellendus. Facilis sint odio aspernatur voluptas commodi qui qui qui pariatur. Corrupti deleniti itaque quaerat ipsum deleniti culpa tempora tempore. Et consequatur exercitationem hic aspernatur nobis est voluptatibus architecto laborum.
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/person-f-10.webp" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Jena Karlis</h3>
+                        <span>Store Owner</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/person/person-f-10.webp" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- End Testimonial Item -->
+
+          <!-- </div>
+
+          <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- /Testimonials Section -->
+
+    <!-- Services Section -->
+    <!-- <section id="services" class="services section"> -->
+
+      <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
+      </div> -->
+      <!-- End Section Title -->
+
+      <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h2 class="fw-bold mb-4 servies-title">Consectetur adipiscing elit sed do eiusmod tempor</h2>
+            <p class="mb-4">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit class aptent taciti sociosqu ad litora.</p>
+            <a href="#" class="btn btn-outline-primary">See all services</a>
+          </div>
+          <div class="col-lg-8">
+            <div class="row g-4">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-item">
+                  <i class="bi bi-activity icon"></i>
+                  <h3><a href="service-details.html">Eget nulla facilisi etiam</a></h3>
+                  <p>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla.</p>
+                </div>
+              </div> -->
+              <!-- End Service Item -->
+
+              <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-item">
+                  <i class="bi bi-easel icon"></i>
+                  <h3><a href="service-details.html">Duis aute irure dolor</a></h3>
+                  <p>Auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor.</p>
+                </div>
+              </div> -->
+              <!-- End Service Item -->
+
+              <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-item">
+                  <i class="bi bi-broadcast icon"></i>
+                  <h3><a href="service-details.html">Excepteur sint occaecat</a></h3>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                </div>
+              </div> -->
+              <!-- End Service Item -->
+
+              <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-item">
+                  <i class="bi bi-bounding-box-circles icon"></i>
+                  <h3><a href="service-details.html">Tempor incididunt ut labore</a></h3>
+                  <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+                </div>
+              </div> -->
+              <!-- End Service Item -->
+
+            <!-- </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- /Services Section -->
+
+    <!-- Faq Section -->
+    <!-- <section id="faq" class="faq section"> -->
+
+      <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
+      </div> -->
+      <!-- End Section Title -->
+
+      <!-- <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div> -->
+              <!-- End Faq item-->
+
+              <!-- <div class="faq-item">
+                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div> -->
+              <!-- End Faq item-->
+
+              <!-- <div class="faq-item">
+                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <div class="faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div> -->
+              <!-- End Faq item-->
+
+              <!-- <div class="faq-item">
+                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div> -->
+              <!-- End Faq item-->
+
+              <!-- <div class="faq-item">
+                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+                <div class="faq-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div> -->
+              <!-- End Faq item-->
+
+              <!-- <div class="faq-item">
+                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+                <div class="faq-content">
+                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div> -->
+              <!-- End Faq item-->
+
+            <!-- </div>
+
+          </div> -->
+          <!-- End Faq Column-->
+
+        <!-- </div>
+
+      </div>
+
+    </section> -->
+    <!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
+              <div class="section-category mb-3">Contact</div>
+              <h2 class="display-5 mb-4">Let's Connect!</h2>
+              <p class="lead mb-4">
+                I welcome academic and personal collaborations. The following services are available for you to request my assistance with:
+              </p>
+              <ul>
+                  <li class="lead">Collaboration on research relating to my areas of interest.</li>
+                  <li class="lead">Request disclosure of the full text of my academic paper.</li>
+                  <li class="lead">Request for any academic contributions.</li>
+              </ul>
+              <p class="lead mb-4">
+                I will try my best to respond to you as soon as possible.
+              </p>
+
+              <div class="contact-info mt-5">
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-envelope-at me-3"></i>
+                  <span><a href="mailto:charnon@cmkl.ac.th">charnon@cmkl.ac.th</a></span>
+                </div>
+
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-telephone me-3"></i>
+                  <span><a href="tel:66980984010">(+66) 098 098 4010</a></span>
+                </div>
+
+                <div class="info-item d-flex mb-4">
+                  <i class="bi bi-geo-alt me-3"></i>
+                  <span><a href="https://maps.app.goo.gl/MDLZrNEoEz7qgfBk7">CMKL University, Ladkrabang, Bangkok, Thailand</a></span>
+                </div>
+
+                <!-- <a href="#" class="map-link d-inline-flex align-items-center">
+                  Open Map
+                  <i class="bi bi-arrow-right ms-2"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-body p-4 p-lg-5">
+
+                <form action="https://formsubmit.co/11f1fcf33613df19c1b871de3e726a53" method="post" class="php-email-form">
+                  <div class="row gy-4">
+
+                    <div class="col-12">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+
+                    <div class="col-12 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+
+                    <div class="col-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+
+                    <div class="col-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                      <button type="submit" class="btn btn-submit w-100">Submit Message</button>
+                    </div>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Charnon Pattiyanon</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.facebook.com/toptenzc/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/chnpat/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/charnon-pat/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.researchgate.net/profile/Charnon-Pattiyanon" class="researchgate" target="_blank"><i class="fa fa-researchgate"></i></a>
+        <a href="https://orcid.org/my-orcid?orcid=0000-0003-3660-2962" class="orcid" target="_blank"><i class="fa fa-orcid"></i></a>
+        <a href="https://github.com/chnpat" class="github" target="_blank"><i class="fa fa-github"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
