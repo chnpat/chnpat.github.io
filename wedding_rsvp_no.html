@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smithcha &amp; Charnon's Wedding RSVP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-rose-100 via-fuchsia-100 to-rose-200 flex flex-col" style="background: linear-gradient(to bottom, #E8D9E6 0%, #F5DDE0 25%, #FFF6E6 50%, #EBF6ED 75%, #EBF4FF 100%);">
+  <!-- Banner / Logo -->
+  <div class="flex justify-center items-center py-8">
+    <img src="https://charnon-cmkl.github.io/assets/img/Smithcha-Charnon_V2_A-01.png" alt="Wedding Logo" class="h-48 w-auto">
+  </div>
+
+  <!-- Form Section -->
+  <h1 class="text-2xl font-bold text-center text-black-500 mb-6">เสียดายที่คุณไม่สามารถมาร่วมงานแต่งของเราได้ คุณคือคนสำคัญสำหรับเราเลยนะ 💕 <br/>ถ้าเปลี่ยนใจ ยังสามารถกดกลับไปเข้าร่วมได้ หรือจะฝากคำอวยพรให้เราผ่านปุ่มด้านล่างก็ได้เช่นกันค่ะ/ครับ</h1>
+  <div class="max-w-xl mx-auto bg-white shadow-md rounded-lg p-6">
+    <div class="text-left mb-4">
+      <a href="wedding_rsvp.html" class="text-gray-500 hover:text-black font-medium underline">← กลับไปที่หน้าแรก</a>
+    </div>
+    <form id="rsvpNoForm">
+      <label for="noName" class="block text-l font-medium mt-4">กรุณาระบุชื่อของคุณ</label>
+      <input type="text" id="noName" name="noName" placeholder="โปรดระบุชื่อของคุณ" required class="w-full mt-1 p-2 border border-gray-300 rounded-md mr-2">
+
+      <label for="message" class="block text-l font-medium mt-4">มีข้อความอยากฝากถึงเราไหม?</label>
+      <textarea id="message" name="message" rows="4" placeholder="เช่น ขอแสดงความยินดีด้วยนะคะ ❤️" class="w-full mt-1 p-2 border border-gray-300 rounded-md mr-2"></textarea>
+
+      <button type="submit" id="submitBtn" class="bg-rose-400 text-white font-semibold py-2 px-4 rounded-md hover:bg-rose-500 mt-6 w-full">ส่งคำตอบ</button>
+    </form>
+  </div>
+
+  <div id="loadingPopup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+      <svg class="animate-spin h-6 w-6 text-rose-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+      </svg>
+      <span class="text-gray-700 font-medium">กำลังส่งข้อมูล...</span>
+    </div>
+  </div>
+
+  <div id="successPopup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm">
+      <h2 class="text-xl font-semibold text-green-600 mb-4">ขอบคุณสำหรับการตอบรับ!</h2>
+      <p class="text-gray-700 mb-4">เราขอขอบคุณที่แจ้งให้เราทราบ ❤️</p>
+      <button id="closeSuccessPopup" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">ปิด</button>
+    </div>
+  </div>
+
+  <script>
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzkYN2gd9JElCUBuCTL7L0WYW4yQlabSM84CaTmpaHiRzcIyh9c1Xht4VHZ7JZd_eml/exec"; 
+    const form = document.getElementById('rsvpNoForm');
+    const loadingPopup = document.getElementById('loadingPopup');
+    const successPopup = document.getElementById('successPopup');
+    const closeSuccessPopup = document.getElementById('closeSuccessPopup');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      loadingPopup.classList.remove('hidden');
+
+      const formData = new FormData(form);
+
+      try {
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: 'POST',
+          body: formData
+        });
+        successPopup.classList.remove('hidden');
+        form.reset();
+      } catch (error) {
+        alert('เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง');
+        console.error(error);
+      } finally {
+        loadingPopup.classList.add('hidden');
+      }
+    });
+
+    closeSuccessPopup.addEventListener('click', () => {
+      successPopup.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
