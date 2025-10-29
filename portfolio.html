@@ -39,45 +39,7 @@
 
 <body class="starter-page-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Charnon Pattiyanon, Ph.D.</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/index.html#about">About</a></li>
-          <li><a href="/index.html#resume">Resume</a></li>
-          <li><a href="/portfolio.html" class="active">Portfolio</a></li>
-          <li class="dropdown"><a href="/publication.html"><span>Publications</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="/publication.html#conference">Conference Papers</a></li>
-              <li><a href="/publication.html#journal">Journal Articles</a></li>
-              <li><a href="/publication.html#preprint">Preprints</a></li>
-            </ul>
-          </li>
-          <li><a href="/participation.html">Partipations</a></li>
-          <li><a href="/index.html#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <div class="header-social-links">
-        <a href="https://www.facebook.com/toptenzc/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/chnpat/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/charnon-pat/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.researchgate.net/profile/Charnon-Pattiyanon" class="researchgate" target="_blank"><i class="fa fa-researchgate"></i></a>
-        <a href="https://orcid.org/my-orcid?orcid=0000-0003-3660-2962" class="orcid" target="_blank"><i class="fa fa-orcid"></i></a>
-        <a href="https://github.com/chnpat" class="github" target="_blank"><i class="fa fa-github"></i></a>
-      </div>
-
-    </div>
-  </header>
+  <div id="navbar-placeholder"></div>
 
   <main class="main">
 
@@ -113,13 +75,90 @@
             <ul class="portfolio-filters isotope-filters">
               <li data-filter="*" class="filter-active">All Works</li>
               <li data-filter=".filter-urd">Undergraduate Student Projects</li>
+              <li data-filter=".filter-research">Graduate/Research Projects</li>
               <li data-filter=".filter-intern">Internship Student Projects</li>
-              <!-- <li data-filter=".filter-research">Graduate/Research Projects</li> -->
+              <li data-filter=".filter-coop">Cooperative Education Projects</li>
               <!-- <li data-filter=".filter-brand">Branding</li> -->
             </ul>
           </div>
 
           <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-urd">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/Default.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <!-- <a href="assets/img/portfolio/MED-D/urd-Med-D.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-urd"><i class="bi bi-eye"></i></a> -->
+                      <a href="/portfolio-items/urd-WealthPB.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Undergraduate Student Projects</span>
+                  <h3>Wealth Playbook (WPB - AI Financial Advior)</h3>
+                  <p>AI-Powered Personalization for Wealth Portfolio Customization Without Initial Investment. &mdash; <em>Aug 2025 to Present</em></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-urd">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/Default.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <!-- <a href="assets/img/portfolio/MED-D/urd-Med-D.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-urd"><i class="bi bi-eye"></i></a> -->
+                      <a href="/portfolio-items/urd-ScheDool.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Undergraduate Student Projects</span>
+                  <h3>ScheDool: AI-Assisted Class Scheduling System</h3>
+                  <p>Replacing Traditional Optimization with AI-Assisted Generation for Automated School Timetabling &mdash; <em>Aug 2025 to Present</em></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-urd">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/Default.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <!-- <a href="assets/img/portfolio/MED-D/urd-Med-D.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-urd"><i class="bi bi-eye"></i></a> -->
+                      <a href="/portfolio-items/urd-PM25.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Undergraduate Student Projects</span>
+                  <h3>AI for Multi-Source PM2.5 Pollution Analysis</h3>
+                  <p>Incorporating Multi-Source Data for PM2.5 Pollution Prediction and Source Identification Using Physics-Informed Neural Networks (PINNs). &mdash; <em>Aug 2025 to Present</em></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-research">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/Default.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <!-- <a href="assets/img/portfolio/MED-D/urd-Med-D.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-urd"><i class="bi bi-eye"></i></a> -->
+                      <a href="/portfolio-items/grad-SCAudit.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Graduate Research Projects</span>
+                  <h3>AI-Powered Automatic Smart Contract Auditing</h3>
+                  <p>Leveraging AI-Based Code Scanning for the Analysis of Vulnerable and Poorly Implemented Blockchain Smart Contracts &mdash; <em>Aug 2025 to Present</em></p>
+                </div>
+              </div>
+            </div>
 
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-urd">
               <div class="portfolio-card">
@@ -159,27 +198,6 @@
               </div>
             </div>
 
-            
-
-            <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-research">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-research"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Graduate/Research Projects</span>
-                  <h3>Luxury Brand Package</h3>
-                  <p>Aenean lacinia bibendum nulla sed consectetur elit.</p>
-                </div>
-              </div>
-            </div> -->
-
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-urd">
               <div class="portfolio-card">
                 <div class="portfolio-image">
@@ -218,21 +236,41 @@
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-intern">
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-coop">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/IPS/CIE/intern-IPS-CIE.JPG" class="img-fluid" alt="" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       <a href="assets/img/portfolio/IPS/CIE/intern-IPS-CIE.JPG" class="glightbox preview-link" data-gallery="portfolio-gallery-intern"><i class="bi bi-eye"></i></a>
-                      <a href="/portfolio-items/intern-IPS-CIE.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      <a href="/portfolio-items/coop-IPS-CIE.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Internship Student Projects</span>
+                  <span class="category">Cooperative Education Projects</span>
                   <h3>Enhancing the Performance of the Wi-Fi IPS Data Collection</h3>
                   <p>Innovating a new way of data collection and synthetic data integration in IPS fingerprint database creation &mdash; <em>Mar 2024 to Dec 2024</em></p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-urd">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/MaTravel/urd-MaTravel.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/MaTravel/urd-MaTravel-1.jpeg" class="glightbox preview-link" data-gallery="portfolio-gallery-urd"><i class="bi bi-eye"></i></a>
+                      <a href="/portfolio-items/urd-MaTravel.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Undergraduate Student Projects</span>
+                  <h3>MaTravel: Matching Algorithm for Traveling </h3>
+                  <p>Leveraging Technology to Facilitate Meaningful Connections Between Travelers and Locals. &mdash; <em>Aug 2024 to May 2025</em></p>
                 </div>
               </div>
             </div>
@@ -247,30 +285,7 @@
 
   </main>
 
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Charnon Pattiyanon</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.facebook.com/toptenzc/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/chnpat/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/charnon-pat/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.researchgate.net/profile/Charnon-Pattiyanon" class="researchgate" target="_blank"><i class="fa fa-researchgate"></i></a>
-        <a href="https://orcid.org/my-orcid?orcid=0000-0003-3660-2962" class="orcid" target="_blank"><i class="fa fa-orcid"></i></a>
-        <a href="https://github.com/chnpat" class="github" target="_blank"><i class="fa fa-github"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
+  <div id="footer-placeholder"></div>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -287,7 +302,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/loader.js"></script>
 </body>
 
 </html>

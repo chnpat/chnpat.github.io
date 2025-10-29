@@ -39,47 +39,9 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <div id="navbar-placeholder"></div>
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Charnon Pattiyanon, Ph.D.</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="/index.html" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="/portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="/publication.html"><span>Publications</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="/publication.html#conference">Conference Papers</a></li>
-              <li><a href="/publication.html#journal">Journal Articles</a></li>
-              <li><a href="/publication.html#preprint">Preprints</a></li>
-            </ul>
-          </li>
-          <li><a href="/participation.html">Partipations</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <div class="header-social-links">
-        <a href="https://www.facebook.com/toptenzc/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/chnpat/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/charnon-pat/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.researchgate.net/profile/Charnon-Pattiyanon" class="researchgate" target="_blank"><i class="fa fa-researchgate"></i></a>
-        <a href="https://orcid.org/my-orcid?orcid=0000-0003-3660-2962" class="orcid" target="_blank"><i class="fa fa-orcid"></i></a>
-        <a href="https://github.com/chnpat" class="github" target="_blank"><i class="fa fa-github"></i></a>
-      </div>
-
-    </div>
-  </header>
-
-  <main class="main">
+  <main class="main mt-4">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
@@ -91,7 +53,7 @@
             <h2>Secure Software in the Era of AI &amp; Decentralization</h2>
             <p class="lead">"If you think technology can solve your security problems, then you don't understand your security problems and you don't understand technology." &mdash; <em>Bruce Schneier</em></p>
             <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="/assets/file/CV - Formal - Blue - 2025.pdf" class="btn btn-primary">Download Full CV</a>
+              <a href="/assets/file/CV.pdf" class="btn btn-primary">Download Full CV</a>
               <a href="#contact" class="btn btn-outline">Let's Connect</a>
             </div>
             <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
@@ -100,18 +62,18 @@
                 <span class="stat-label">Years Experience</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number">5+</span>
+                <span class="stat-number">10+</span>
                 <span class="stat-label">Projects Advised and Completed</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number">6</span>
+                <span class="stat-number">9</span>
                 <span class="stat-label">Publications</span>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="hero-image">
-              <img src="/assets/img/profile/profile-1.png" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
+              <img src="/assets/img/profile/profile.png" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
               <div class="shape-1"></div>
               <div class="shape-2"></div>
             </div>
@@ -126,7 +88,7 @@
     <section id="about" class="about section light-background">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>About Me</h2>
         <!-- <div class="title-shape">
           <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
@@ -171,8 +133,8 @@
 
                   <div class="col-6">
                     <div class="info-item">
-                      <span class="label">Location</span>
-                      <span class="value">Bangkok, Thailand</span>
+                      <span class="label">Affiliation</span>
+                      <span class="value">CMKL University, Bangkok, Thailand</span>
                     </div>
                   </div>
 
@@ -185,7 +147,7 @@
 
                   <div class="col-6">
                     <div class="info-item">
-                      <span class="label">Occupation</span>
+                      <span class="label">Position</span>
                       <span class="value">Assistant Director of IT, Instructor</span>
                     </div>
                   </div>
@@ -219,7 +181,7 @@
     <!-- Skills Section -->
     <section id="skills" class="skills section">
 
-      <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
+      <div class="container section-title">
         <h2>Research Interest</h2>
         <!-- <div class="title-shape">
           <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
@@ -231,33 +193,34 @@
 
         <div class="row g-4 skills-animation">
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 col-lg-3">
             <div class="skill-box">
-              <h3 style="color: var(--accent-color);">Software Engineering</h3>
-              <p>Requirement Engineering <br /> Software Design &amp; Development <br /> Software Testing <br /> Software Deployment &amp; Maintenance <br /> Formal Methods <br /> Formal Specification and Verification <br /> Model Checking</p>
+              <h3 style="color: var(--accent-color);">Artificial Intelligence</h3>
+              <p>Distributed AI Training and Inference <br /> Distributed Resource Management <br /> Natural Language Processing <br /> Large Language Model <br /> Automatic Speech Recognition <br /> Generative Adversarial Networks <br /> Object Detection </p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-6 col-lg-3">
             <div class="skill-box">
               <h3 style="color: var(--accent-color);">Security &amp; Privacy</h3>
               <p>Security &amp; Privacy Analysis <br /> Security &amp; Privacy Governance <br /> Security &amp; Privacy Laws/Regulations <br /> Identity and Access Management <br /> Cybersecurity <br /> AI Security &amp; Privacy <br /> Cryptography</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-box">
+              <h3 style="color: var(--accent-color);">Software Engineering</h3>
+              <p>Requirement Engineering <br /> Software Design &amp; Development <br /> Software Testing <br /> Software Deployment &amp; Maintenance <br /> Formal Methods <br /> Formal Specification and Verification <br /> Model Checking</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
             <div class="skill-box">
               <h3 style="color: var(--accent-color);">Decentralization</h3>
               <p>Blockchain <br /> Bitcoin, Ethereum, Hyperledger <br /> On-chain/Off-chain Storage <br /> Decentralized Applications <br /> Consensus Mechanisms <br /> Self-Sovereign Identity <br /> Smart Contract</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="skill-box">
-              <h3 style="color: var(--accent-color);">Artificial Intelligence</h3>
-              <p>Distributed AI Training and Inference <br /> Distributed Resource Management <br /> Natural Language Processing <br /> Large Language Model <br /> Automatic Speech Recognition <br /> Generative Adversarial Networks <br /> Object Detection </p>
-            </div>
-          </div>
 
         </div>
 
@@ -269,7 +232,7 @@
     <section id="resume" class="resume section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>Background and Experience</h2>
         <!-- <div class="title-shape">
           <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
@@ -298,6 +261,7 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-right">
                       <h3 class="position" style="color: var(--accent-color);">Doctor of Philosophy (Ph.D.) in Information Science</h3>
+                      <p style="color: var(--accent-color);">Graduate School of Advanced Science and Technology</p>
                       <ul>
                         <li><b>GPA:</b> 2.91 / 3.00</li>
                         <li><b>Academic Advisor:</b> <a href="mailto:toshiaki@jaist.ac.jp">Prof. Toshiaki Aoki, Ph.D.</a></li>
@@ -316,6 +280,7 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-right">
                       <h3 class="position" style="color: var(--accent-color);">Master of Science (M.Sc.) in Software Engineering</h3>
+                      <p style="color: var(--accent-color);">Department of Computer Engineering, Faculty of Engineering</p>
                       <ul>
                         <li><b>GPA:</b> 4.00 / 4.00 (<em>Top of the Class</em>)</li>
                         <li><b>Academic Advisor:</b> <a href="mailto:twittie.s@chula.ac.th">Assoc. Prof. Twittie Senivongse, Ph.D.</a></li>
@@ -333,6 +298,7 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-right">
                       <h3 class="position" style="color: var(--accent-color);">Bachelor of Engineering (B.Eng.) in Computer Engineering (International Program)</h3>
+                      <p style="color: var(--accent-color);">Department of Computer Engineering, Faculty of Engineering</p>
                       <ul>
                         <li><b>GPA:</b> 3.41 / 4.00 (<em>Second-Class Honoured</em>)</li>
                         <li><b>Academic Advisor:</b> <a href="mailto:sanan.sra@kmutt.ac.th">Assoc. Prof. Sanan Srakeaw, Ph.D.</a></li>
@@ -344,7 +310,7 @@
               </div>
 
               <div class="resume-block">
-                <h2>Academic Leadership and Experience</h2>
+                <h2>Teaching Experience and Academic Leadership</h2>
                 <p class="lead">Dr. Charnon's academic leadership roles underscore his significant contributions to both research innovation and educational excellence.</p>
 
                 <div class="timeline">
@@ -357,12 +323,14 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-right">
                       <h3 class="position" style="color: var(--accent-color);">Instructor (Artificial Intelligence and Computer Engineering Program)</h3>
+                      <p style="color: var(--accent-color);">Department of Artificial Intelligence and Computer Engineering</p>
                       <p class="description">
                         <ul>
                           <li>Being an instructor for several undergraduate courses in Cybersecurity, including:</li>
                           <ul>
                             <li>SEC-101: Data and Information Fundamentals (2 Credits)</li>
                             <li>SEC-201: Data Privacy, Security, and Integrity (4 Credits)</li>
+                            <li>SEC-203: Secure Startup (4 Credits)</li>
                             <li>SEC-204: Security Policy and Processes (4 Credits)</li>
                             <li>SEC-205: Distributed Ledger and Blockchain (4 Credits)</li>
                             <li>SEC-301: Security Challenges in Modern AI Systems (2 Credits)</li>
@@ -373,7 +341,7 @@
                           </ul>
                           <li>Being an instructor for a graduate course in Cybersecurity, including:</li>
                           <ul>
-                            <li>18-631: Introduction to Information Security (4 Credits)</li>
+                            <li>18-631: Introduction to Information Security (12 Credits)</li>
                           </ul>
                           <li>Prepare course materials, assessment items, and grading during the semester.</li>
                           <li>Develop curriculum / program content & offer at least 12 credits per semester on related competencies.</li>
@@ -395,8 +363,9 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-right">
                       <h3 class="position" style="color: var(--accent-color);">Internship Student Mentor</h3>
+                      <p style="color: var(--accent-color);">Aoki Laboratory, Graduate School of Advanced Science and Technology</p>
                       <ul>
-                        <li>Being selected as a mentor for an internship student from the India Institute of Technology Gandhinagar for 2 months.</li>
+                        <li>Mentor on a project of an internship student from the India Institute of Technology Gandhinagar (IIT-GN) for 2 months.</li>
                         <li>Give advice and instruct the student on assignments and research activities.</li>
                         <li>Review and provide feedback on the student assignments.</li>
                       </ul>
@@ -412,12 +381,30 @@
                     </div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-right">
-                      <h3 class="position" style="color: var(--accent-color);">Teaching Assistant</h3>
+                      <h3 class="position" style="color: var(--accent-color);">Teaching Assistant in the Software Design Methodlogy Course</h3>
+                      <p style="color: var(--accent-color);">Graduate School of Advanced Science and Technology, School of Information Science</p>
                       <ul>
-                        <li>Being selected as one of the teaching assistants in the <em>Software Design Methodology</em> course for graduate students.</li>
                         <li>Discuss and review weekly exercises by students.</li>
                         <li>Criticize and evaluate students' presentations of the term project.</li>
-                        <li>Review and evaluate term reports with course instructors.</li>
+                        <li>Participate in the reviewing and grading activities of the term reports with course instructors.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-left">
+                      <h4 class="company">Chulalongkorn University</h4>
+                      <p class="description"><em>Bangkok, Thailand</em></p>
+                      <span class="period">Jan, 2017 - Dec, 2017</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position" style="color: var(--accent-color);">Teaching Assistant in Software Engineering Course</h3>
+                      <p style="color: var(--accent-color);">International School of Engineering (ISE), Faculty of Engineering</p>
+                      <ul>
+                        <li>Prepare and provide support during the lectures, addressing any questions or concerns raised by the students.</li>
+                        <li>Facilitate group activities in active and flip classrooms to enhance the students' learning experience.</li>
+                        <li>Participate in term project presentation sessions, offering constructive criticism and valuable feedback to students, aiming to enhance the quality of their work.</li>
                       </ul>
                     </div>
                   </div>
@@ -430,9 +417,9 @@
                     </div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-right">
-                      <h3 class="position" style="color: var(--accent-color);">Teaching Assistant</h3>
+                      <h3 class="position" style="color: var(--accent-color);">Teaching Assistant in Software and System Analysis Course</h3>
+                      <p style="color: var(--accent-color);">Department of Computer Engineering, Faculty of Engineering</p>
                       <ul>
-                        <li>Being selected as one of the teaching assistants in the <em>Software and System Analysis and Design</em> course of 120+ of 3rd year undergraduate students.</li>
                         <li>Prepare and review weekly learning materials from instructors.</li>
                         <li>Grade and review students' homework and projects along the course with a support from course instructor.</li>
                         <li>Participate in the preparation of course materials for visually impaired students by creating a textual material from the textbooks and slides for generating braille manuscripts.</li>
@@ -448,13 +435,14 @@
                     </div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-right">
-                      <h3 class="position" style="color: var(--accent-color);">Teaching Assistant</h3>
+                      <h3 class="position" style="color: var(--accent-color);">Teaching Assistant in the Python Programming Course</h3>
+                      <p style="color: var(--accent-color);">Faculty of Engineering</p>
                       <ul>
-                        <li>Being selected as one of the teaching assistants in the <em>Python programming</em> course of 1st year undergraduate students. </li>
-                        <li>Facilitate and assist in the lecture of a section of 50+ students by responding to student questions and clarifying student misunderstanding.</li>
-                        <li>Give advice and instruct a section of programming lab.</li>
-                        <li>Review and prepare the solution for quizzes in the course.</li>
-                        <li>Grade and review students' score for the objective examination (both mid-term and final).</li>
+                        <li>Facilitate and assist in the lecture of a section of 50+ students</li>
+                        <li>Research and answer student questions to clarify their misunderstanding.</li>
+                        <li>Give advice and instruct programming lab sessions in the course.</li>
+                        <li>Review and prepare solutions for quizzes in the course.</li>
+                        <li>Grade mid-term and final exams that have clear and fixed answers with a close supervision of the course instructor.</li>
                       </ul>
                     </div>
                   </div>
@@ -464,7 +452,7 @@
               
               
               <div class="resume-block">
-                <h2>Work Experience</h2>
+                <h2>Professional Work Experience</h2>
                 <p class="lead">Dr. Charnon's professional journey extends beyond academia, encompassing significant work experience in diverse industries where his expertise has translated into tangible impact.</p>
 
                 <div class="timeline">
@@ -476,7 +464,7 @@
                     </div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-right">
-                      <h3 class="position" style="color: var(--accent-color);">Assistant Director of IT</h3>
+                      <h3 class="position" style="color: var(--accent-color);">Assistant Director of Information Technology Department</h3>
                       <p class="description">
                         <ul>
                           <li>Oversee IT operations and supervise systems and IT staff.</li>
@@ -486,6 +474,7 @@
                           <li>Ensure smooth delivery and operation of IT services by monitoring the system's performance.</li>
                           <li>Create processes and standards for selection, implementation, and support of university-related IT systems.</li>
                           <li>Provide direction, guidance, and training to IT staff.</li>
+                          <li><strong>Technology Stack:</strong> Linux, Secure Shell, Docker, Kubernetes, Ray, SLURM</li>
                         </ul>
                       </p>
                     </div>
@@ -506,8 +495,9 @@
                         <li>Develop an architecture and design the solution for customers.</li>
                         <li>Develop specification documents to propose a custom solution to the customer.</li>
                         <li>Develop custom modules to identity and access management systems to provide Single Sign-On (SSO) features.</li>
-                        <li>Lead a team of 5 developers in enterprise-level projects.</li>
-                        <li>Manage project progress and ensure that the project can be delivered on time.</li>
+                        <li>Lead a team of five developers/engineers in enterprise-level projects.</li>
+                        <li>Track project progress and ensure in-time delivery of projects.</li>
+                        <li><strong>Technology Stack:</strong> Java, Spring Framework, JSF, PrimeFaces, HTML, CSS, Oracle Identity and Access Management, ForgeRock Identity, Git, SVN, Linux, Solaris</li>
                       </ul>
                       <p></p>
                     </div>
@@ -521,14 +511,15 @@
                     </div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-right">
-                      <h3 class="position" style="color: var(--accent-color);">Web Developer</h3>
+                      <h3 class="position" style="color: var(--accent-color);">ASP.NET/C# Web Developer</h3>
                       <ul>
-                        <li>Develop e-commerce websites using ASP.NET C# and Bootstrap framework.</li>
+                        <li>Develop e-commerce websites using ASP.NET/C# and Bootstrap framework.</li>
                         <li>Customize front-end interfaces of the e-commerce website to match with SME clients' branding using CSS and Javascript.</li>
                         <li>Participate in the full stack development tasks with the team using the Scrum development processes.</li>
-                        <li>Work closely with SME clients to gather and extract system requirements.</li>
+                        <li>Work closely with SME clients to gather and extract system requirements for product customization.</li>
                         <li>Participate in the client training session to walk-through the company product.</li>
-                        <li>Hold an on-call support via a ticketing system to support SME clients with website-related issues</li>
+                        <li>Hold an on-call support via a ticketing system to support SME clients with product-related issues</li>
+                        <li><strong>Technology Stack:</strong> ASP.NET, C#, Bootstrap, HTML, CSS, Git, SVN</li>
                       </ul>
                     </div>
                   </div>
@@ -543,11 +534,10 @@
                     <div class="timeline-right">
                       <h3 class="position" style="color: var(--accent-color);">Windows Application Developer Intern</h3>
                       <ul>
-                        <li>Being selected as a participant in an internship program.</li>
-                        <li>Participate with the team to develop Windows 8 applications using ASP.NET and C# as programming languages.</li>
-                        <li>Participate with the team to develop Windows Phone applications using ASP.NET and C# as programming languages.</li>
+                        <li>Work closely with a team of interns to develop Windows 8 and Windows Phone applications using ASP.NET and C# as a programming framework.</li>
                         <li>Submit the developed application to the Windows application store.</li>
-                        <li>Participate with the team to develop a rythm/music game, using Unity and C#.</li>
+                        <li>Develop a Windows 8 rhythm/music game application using Unity and C#.</li>
+                        <li><strong>Technology Stack:</strong> ASP.NET, C#, Unity</li>
                       </ul>
                     </div>
                   </div>
@@ -1046,11 +1036,11 @@
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
         <div class="row g-5">
           <div class="col-lg-6">
-            <div class="content" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
               <div class="section-category mb-3">Contact</div>
               <h2 class="display-5 mb-4">Let's Connect!</h2>
               <p class="lead mb-4">
@@ -1090,7 +1080,7 @@
           </div>
 
           <div class="col-lg-6">
-            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+            <div class="contact-form card">
               <div class="card-body p-4 p-lg-5">
 
                 <form action="https://api.web3forms.com/submit" method="post" class="php-email-form">
@@ -1137,30 +1127,7 @@
 
   </main>
 
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Charnon Pattiyanon</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.facebook.com/toptenzc/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/chnpat/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/charnon-pat/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.researchgate.net/profile/Charnon-Pattiyanon" class="researchgate" target="_blank"><i class="fa fa-researchgate"></i></a>
-        <a href="https://orcid.org/my-orcid?orcid=0000-0003-3660-2962" class="orcid" target="_blank"><i class="fa fa-orcid"></i></a>
-        <a href="https://github.com/chnpat" class="github" target="_blank"><i class="fa fa-github"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
+  <div id="footer-placeholder"></div>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -1177,6 +1144,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/loader.js"></script>
 
 </body>
 

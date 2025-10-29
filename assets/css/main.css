@@ -1,4 +1,4 @@
-/**
+﻿/**
 * Template Name: EasyFolio
 * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
 * Updated: Feb 21 2025 with Bootstrap v5.3.3
@@ -64,6 +64,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  padding-top: 100px; /* Adjust this based on your navbar height */
 }
 
 a {
@@ -2005,4 +2006,16 @@ section,
   background-color: var(--accent-color);
   color: var(--contrast-color);
   transform: translateY(-2px);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border-bottom: 1px groove !important; /* Adds a 1px solid black border to the bottom of each row */
+}
+
+tr:last-child td, tr:last-child th {
+  border-bottom: none !important;
 }

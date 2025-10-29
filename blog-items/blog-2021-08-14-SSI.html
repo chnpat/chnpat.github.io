@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Blog: 2021-08-14 SSI</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" rel="stylesheet"
+    integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: EasyFolio
+  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
+  * Updated: Feb 21 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="starter-page-page">
+
+  <div id="navbar-placeholder"></div>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html"><i class="bi bi-house"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="../blog.html">Blogs</a></li>
+            <li class="breadcrumb-item active current">2021-08-14 SSI</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Self-Sovereign Identity แนวคิดการถือครองอัตลักษณ์ด้วยตนเอง</h2>
+        <!-- <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div> -->
+      </div><!-- End Section Title -->
+    </div><!-- End Page Title -->
+
+    <!-- Journal Section -->
+    <section id="journal" class="resume section">
+
+      <div class="container">
+        <div class="resume-wrapper">
+
+          <div class="resume-block" style="font-size: 18px;">
+            <p>ศาสตร์ด้านการจัดการอัตลักษณ์และการเข้าถึง (Identity and Access Management) เป็นหลักการพื้นฐานของระบบจัดการข้อมูล (Information System) ในปัจจุบัน หลักการทั่วไปคือ</p>
+
+            <ul>
+              <li>Who หรือการระบุว่าใครเป็นผู้ใช้งานระบบ และการระบุว่าผู้ใช้งานนั้นๆ คือบุคคลตามอ้างถึงจริงหรือไม่</li>
+              <li>What หรือการระบุสิทธิ์ของผู้ใช้งานแต่ละคนว่าสามารถเข้าถึงบริการ (Service) หรือข้อมูล (Information) ใดได้</li>
+            </ul>
+
+            <p>ซึ่งการที่ระบบต่างๆ จะทำตามหลักการข้างต้นได้นั้น จำเป็นต้องมีการเติมฟังก์ชันรักษาความปลอดภัยเข้าไปในระบบด้วย</p>
+            
+            <p>ฟังก์ชันรักษาความปลอดภัยที่ทุกท่านรู้จักกันดีและใช้สำหรับการจัดการอัตลักษณ์และการเข้าถึงก็คือ User Registration และ User Authentication</p>
+
+            <p>แต่ด้วยฟังก์ชันเหล่านั้น ผู้ใช้งานจำเป็นต้องให้ข้อมูลส่วนบุคคล (Personal Information) แก่ผู้ให้บริการระหว่างการสร้างบัญชีผู้ใช้ (User Registration)</p>
+            
+            <p>จากนั้น ผู้ใช้งานจะต้องใช้ข้อมูลอ้างอิง (Credential) ที่มีเพียงผู้ใช้งานนั้นๆ ทราบหรือถือครอง เช่น username, password หรือ biometric เป็นต้น ในการระบุตัวตนผู้ใช้งาน (User Authentication)</p>
+            
+            <p>การกระทำเช่นนั้น ทำให้เกิดปัญหาหลัก 2 ข้อ คือ</p>
+
+            <ol>
+              <li>การจำต้องเชื่อมั่นในผู้ให้บริการ เพราะหากผู้ให้บริการจัดการข้อมูลส่วนตัวของผู้ใช้งานไม่ดี ก็จะส่งผลให้เกิดการรั่วไหลของข้อมูลส่วนตัวได้</li>
+              <li>การกระจายของข้อมูลส่วนตัวที่ทำให้ยากต่อการจัดการ เช่น ทุกวันนี้เราใช้งาน social media หลากหลายแห่งมาก หากวันหนึ่งเรามีการเปลี่ยนชื่อ หรือย้ายที่อยู่ เราจะต้องตามแก้ข้อมูลเหล่านี้ในทุกๆ ที่</li>
+            </ol>
+            
+            <p>ก่อนหน้านี้ปัญหาเหล่านี้ยากที่จะแก้ และผู้ใช้งานจะต้องยอมรับความเสี่ยงด้วยตนเอง</p>
+          
+          </div>
+
+          <div class="resume-block" style="font-size: 18px;">
+            <h3>การกำเนิดของ Self-Sovereign Identity กับเทคโนโลยี Blockchain</h3>
+
+            <p>ปฏิเสธไม่ได้ว่าการมาของเทคโนโลยี Blockchain ทำให้เกิดการเปลี่ยนแปลงทางเทคโนโลยีในหลายวงการอย่างมาก รวมไปถึงศาสตร์ของการจัดการอัตลักษณ์และการเข้าถึง</p>
+            
+            <p><strong>Self-Sovereign Identity (SSI)</strong> เป็น Decentralized System ชนิดหนึ่งที่สร้างขึ้นด้วยแนวคิดที่ว่า ผู้ใช้งาน หรือเจ้าของข้อมูล จะมีสิทธิ์สูงสุดในการจัดการอัตลักษณ์และข้อมูลส่วนตัวของตนเอง</p>
+            
+            <p>เป้าหมายหลักของ SSI System คือการจัดการปัญหาทั้ง 2 ข้อที่กล่าวมาข้างต้น</p>
+
+            <div class="text-center">
+              <img src="/assets/img/blog/2021-08-14/SSI-001.png" class="img-fluid" style="width: 60%; "/>
+
+              <p class="mb-4">รูปที่ 1 ภาพรวมโปรโตคอล Self-Sovereign Identity</p>
+            </div>
+
+            <p>SSI System เป็นระบบที่ประยุกต์ใช้ทั้ง Application และ Blockchain เข้าด้วยกัน โดยระบบจะแบ่งกลุ่มผู้ใช้งานออกเป็น 3 บทบาทหลักคือ</p>
+
+            <ol>
+              <li>Holder หรือ Owner คือผู้ใช้งานทั่วไปที่ต้องการใช้บริการต่างๆ และเป็นผู้ถือครองอัตลักษณ์ของตนเอง</li>
+              <li>Issuer คือผู้ใช้งาน หน่วยงาน หรือระบบที่ทำหน้าที่รับรองข้อมูลอ้างอิงที่สามารถตรวจสอบได้ (Verifiable Credential) แก่ Holder</li>
+              <li>Verifier หรือ Service Provider คือผู้ใช้งาน หน่วยงาน หรือระบบที่ให้บริการแก่ผู้ใช้งาน (ซึ่งคือ Holder) โดยต้องการข้อมูลอ้างอิงที่ตรวขสอบได้มาใช้ในการระบุตัวตน</li>
+            </ol>
+            
+            <p>ผู้ใช้งานแต่ละคนสามารถเป็นได้ทั้งสามบทบาท (Interchangeable Roles)</p>
+            <p>การทำงานของ SSI System จะถูกแบ่งออกเป็น 3 ขั้นตอนหลัก (อ้างอิงตามรูปด้านบน) คือ</p>
+
+          </div>
+
+          <div class="resume-block" style="font-size: 18px;">
+            <h3>Identity Creation</h3>
+
+            <p>การสร้างอัตลักษณ์ใน SSI System จะคล้ายคลึงกับการสร้างบัญชีผู้ใช้ในระบบดั้งเดิม โดย SSI System ส่วนมากจะใช้แอพลิเคชันบนมือถือที่เรียกว่า Identity Wallet เป็นจุดรับข้อมูลต่างๆ ขั้นตอนการทำงานมีดังนี้</p>
+
+            <ol>
+              <li>Holder สร้างข้อมูลอัตลักษณ์ของตนเอง เช่น ชื่อ ที่อยู่ อายุ ประวัติการศึกษา ใน Identity Wallet</li>
+              <li>Identity Wallet เข้ารหัสและบันทึกข้อมูลอัตลักษณ์ลงในหน่วยความจำของอุปกรณ์ เรียกว่า Identity Vault</li>
+              <li>Identity Wallet สร้างตัวระบุแบบกระจายศูนย์ (Decentralized Identifier — DID) ที่จะมีลักษณะเป็นตัวอักษรและตัวเลข เช่น did:sov:abc123456789</li>
+              <li>Identity Wallet สร้างคู่กุญแจสำหรับเข้ารหัส (Public & Private Keys) ซึ่ง Private Key จะใช้สำหรับถอดรหัสข้อมูลที่ถูกเข้ารหัสด้วย Public Key</li>
+              <li>Identity Wallet สร้าง transaction เพื่อเขียน DID กับ Public Key บน Blockchain</li>
+            </ol>
+          </div>
+          
+          <div class="resume-block" style="font-size: 18px;">
+            <h3>Claim Validation and Verifiable Claim Issuance</h3>
+
+            <p>ในการระบุตัวตน (User Authentication) ใน SSI System จะใช้ข้อมูลอ้างอิงที่นิยมเรียกว่า Claim หรือข้อกล่าวอ้าง ยกตัวอย่างเช่น “ฉันชื่อสมชาย” หรือ “ฉันอายุมากกว่า 18 ปี”</p>
+
+            <p>บางครั้งข้อกล่าวอ้างอาจจะไม่ได้ระบุข้อมูลส่วนตัวโดยตรงก็ได้ อย่างเช่นตัวอย่างที่ 2 ผู้ใช้งานสามารถระบุเพียงแค่ข้อมูลที่จำเป็นต่อการใช้บริการ โดยไม่ต้องระบุอายุตนเองจริงๆ ก็ได้ กระบวนการนี้จะเรียกว่า Zero-knowledge Proof</p>
+            
+            <p>Issuer มีหน้าที่ตรวจสอบความถูกต้องของข้อกล่าวอ้างนั้นๆ และสร้าง Verifiable Claim จากแผนผังเชิงการเข้ารหัส (Cryptographic Schema) ที่ประกาศอยู่ใน Transaction บน Blockchain</p>
+            
+            <p>ขั้นตอนการทำงานมีดังนี้</p>
+
+            <ol>
+              <li>ก่อนการติดต่อกันของผู้ใช้งานคู่ใด ผู้ใช้งานทั้งคู่ (ในที่นี้คือ Holder กับ Issuer) ต้องแลกเปลี่ยน DID ของกันและกัน</li>
+              <li>ผู้ใช้งานเรียกคืน Public Key ของคู่ติดต่อจาก Blockchain โดยใช้ DID ที่ได้รับ</li>
+              <li>หลังจากนั้นทุกข้อความที่ส่งระหว่างคู่ติดต่อจะต้องเข้ารหัส (Encryption) และสร้างลายเซ็นต์ดิจิทอล (Digital Signature) ด้วย Private Key ของผู้ส่ง กับ Public Key ของผู้รับ ทั้งหมด</li>
+              <li>Holder สร้าง Claim จากข้อมูลส่วนตัวของตนเองใน Identity Wallet</li>
+              <li>Identity Wallet เข้ารหัสและส่ง Claim ไปยัง Issuer</li>
+              <li>Issuer ตรวจสอบ Claim ที่ได้รับทั้งแบบอัตโนมัติ หรือด้วยมือ (Manually)</li>
+              <li>Issuer สร้าง Verifiable Claim ตาม Cryptographic Schema ที่ประกาศไว้บน Blockchain แล้ว ก่อนส่ง Verifiable Claim ที่เข้ารหัสแล้วกลับไปยัง Holder</li>
+              <li>Holder รับ Verifiable Claim และเก็บลง Identity Vault ภายใน Identity Wallet</li>
+            </ol>
+          </div>
+
+          <div class="resume-block" style="font-size: 18px;">
+            <h3>Service Authentication and Proof Presentation</h3>
+
+            <p>เมื่อผู้ใช้งาน (Holder) ต้องการใช้บริการต่างๆ จาก Service Provider หรือ Verifier ผู้ใช้งานจะต้องสร้างข้อพิสูจน์ (Proof) ตามที่ Verifier ต้องการที่ประกอบด้วยข้อมูลส่วนตัวและ Verifiable Claim</p>
+
+            <p>ซึ่งโดยมาก การสร้าง Proof จะจำเป็นต้องใช้ Verifiable Claim แต่ข้อมูลส่วนตัวจะเป็นตัวเลือกที่ผู้ใช้งานจะให้หรือไม่ก็ได้ ตามหลัก Selective Disclosure</p>
+            
+            <p>ขั้นตอนการทำงานมีดังนี้</p>
+
+            <ol>
+              <li>Holder และ Verifier แลกเปลี่ยน DID และเรียกคืน Public Key จาก Blockchain เช่นเดียวกับตอนติดต่อกับ Issuer</li>
+              <li>Holder ร้องขอแผนผัง Proof (Proof Schema) จาก Verifier</li>
+              <li>Holder สร้าง Proof ตาม Proof Schema โดยเลือกข้อมูลส่วนตัวกับ Verifiable Claim จาก Identity Vault ภายใน Identity Wallet</li>
+              <li>Holder ส่ง Proof ที่เข้ารหัสแล้วไปให้ Verifier</li>
+              <li>Verifier ตรวจสอบความถูกต้อง สมบูรณ์ของ Verifiable Claim ภายใน Proof จาก Cryptographic Schema ของ Issuer บน Blockchain</li>
+              <li>หากข้อมูลใน Proof ถูกต้องทั้งหมด Verifier จะยินยอมให้ Holder ใช้บริการของตนเอง</li>
+            </ol>
+          </div>
+
+          <div class="resume-block" style="font-size: 18px;">
+            <p>ถึงการทำงานของ SSI System จะมีความซับซ้อนทางด้านการเข้ารหัส แต่ในมุมของผู้ใช้งานแทบจะไม่ยุ่งยาก และมีการเปลี่ยนแปลงการทำงานเพียงเล็กน้อย</p>
+            
+            <p>โดยสรุป SSI System ถูกพัฒนาขึ้นเพื่อแก้ 2 ปัญหา ได้ดังนี้</p>
+
+            <ol>
+              <li>ผู้ใช้งานไม่จำเป็นต้องเชื่อมั่นในผู้ให้บริการในการจัดเก็บและถือครองข้อมูลส่วนตัวของตนเอง เพราะข้อมูลส่วนตัวทั้งหมดถูกบันทึกใน Identity Vault บนอุปกรณ์ของตนเองเท่านั้น และข้อมูลที่ส่งไปให้ผู้ใช้งานอื่นอาจจะเป็นแค่ส่วนหนึ่งหรือไม่ใช้ข้อมูลจริง (จาก Zero-knowledge proof) ได้</li>
+              <li>ผู้ใช้งานไม่จำเป็นต้องจัดการข้อมูลส่วนตัวในหลายที่ เพราะข้อมูลทั้งหมดอยู่ที่ตนเอง ทำให้ง่ายต่อการแก้ไข ลบ หรือใช้งานข้อมูล</li>
+            </ol>
+
+            <p>ด้วยประโยชน์ข้างต้นของ SSI System บริษัทเทคโนโลยีชั้นนำหลายแห่ง เริ่มนำหลักการนี้ไปใช้สร้างผลิตภัณฑ์ของตนเองเพื่อให้บริการแก่ผู้ใช้งานแล้ว เช่น IBM, Veramo หรือ ShoCard</p>
+            
+            <p>หากคุณสนใจรายละเอียดเกี่ยวกับ SSI System ที่ลงลึกทางเทคนิค สามารถดูข้อมูลเพิ่มเติมได้ตามลิงค์ด้านล่างนี้</p>
+
+            <ul>
+              <li><a href="http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html">http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html</a></li>
+              <li><a href="https://www.bosch.com/stories/self-sovereign-identities/">https://www.bosch.com/stories/self-sovereign-identities/</a></li>
+              <li><a href="https://www.youtube.com/watch?v=HMrBP55xROc">https://www.youtube.com/watch?v=HMrBP55xROc</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/loader.js"></script>
+</body>
+
+</html>
