@@ -27,10 +27,10 @@
       <a href="topofjaneheart_rsvp.html" class="text-gray-500 hover:text-black font-medium underline">← กลับไปที่หน้าแรก (Back to Home)</a>
     </div>
     <form id="rsvpNoForm">
-      <label for="noName" class="block text-xl font-semibold mt-4">กรุณาระบุชื่อของคุณ <span style="color: red;">*</span><br/><span class="text-sm font-normal">Your Name</span></label>
+      <label for="noName" class="block text-xl font-semibold mt-4">กรุณาระบุชื่อของคุณ <span style="color: red;">*</span><br/><span class="text-sm font-normal">Your Full Name</span></label>
       <input type="text" id="noName" name="noName" placeholder="โปรดระบุชื่อของคุณ" required class="w-full mt-4 p-5 text-lg text-black font-extralight border border-gray-300 rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2">
 
-      <label for="message" class="block text-xl font-semibold mt-4">มีข้อความอยากฝากถึงเราไหม? <span style="color: red;">*</span><br/><span class="text-sm font-normal">Your Message for Us</span></label>
+      <label for="message" class="block text-xl font-semibold mt-4">มีข้อความอยากฝากถึงเราไหม? <span style="color: red;">*</span><br/><span class="text-sm font-normal">Your Message or Blessing for Us</span></label>
       <textarea id="message" name="message" rows="4" placeholder="เช่น ขอแสดงความยินดีด้วยนะคะ ❤️" class="w-full mt-4 p-5 text-lg text-black font-extralight border border-gray-300 rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2"></textarea>
 
       <button type="submit" id="submitBtn" class="bg-rose-500 text-white font-semibold py-4 px-6 rounded-lg hover:bg-rose-600 mt-6 w-full text-2xl">
@@ -45,15 +45,16 @@
         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
         <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
       </svg>
-      <span class="text-gray-700 font-medium">กำลังส่งข้อมูล...</span>
+      <span class="text-gray-700 font-medium">กำลังส่งข้อมูล (Loading) ...</span>
     </div>
   </div>
 
   <div id="successPopup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
     <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm">
-      <h2 class="text-xl font-semibold text-green-600 mb-4">ขอบคุณสำหรับการตอบรับ!</h2>
-      <p class="text-gray-700 mb-4">เราขอขอบคุณที่แจ้งให้เราทราบ ❤️</p>
-      <button id="closeSuccessPopup" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">ปิด</button>
+      <h2 class="text-xl font-semibold text-green-600 mb-4">ขอบคุณสำหรับการตอบรับ!<br/>Thank you for submitting the form.</h2>
+      <p class="text-gray-700 mb-4">เราขอขอบคุณที่ส่งคำอวยพรให้เรา ❤️</p>
+      <p class="text-gray-700 mb-4">Thank you so much for your blessing to us. ❤️</p>
+      <button id="closeSuccessPopup" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">ปิด (Dismiss)</button>
     </div>
   </div>
 
