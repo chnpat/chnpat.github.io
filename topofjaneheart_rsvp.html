@@ -21,23 +21,23 @@
   <h3 class="text-lg text-center text-gray-600 mb-6">The Eros Studio ถนนพัฒนาการ ตัดใหม่</h3>
   <div class="max-w-xl mx-auto bg-white shadow-lg rounded-xl p-8">
     <form id="rsvpForm">
-      <label class="block text-xl font-semibold mt-4 mb-4 text-center">คุณสามารถมาร่วมงานแต่งได้หรือไม่?</label>
+      <label class="block text-xl font-semibold mt-4 mb-4 text-center">คุณสามารถมาร่วมงานแต่งได้หรือไม่? <br/> <span class="text-sm">(Will you be attending our wedding?)</span></label>
       <div id="participationOptions" class="flex flex-col items-center space-y-6">
         <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-green-100 hover:border-green-400 transition">
           <input type="radio" name="participation" value="Yes" class="h-6 w-6 mr-4 accent-black" required>
-          <span class="text-lg font-extralight text-gray-700"><span style="color: green;">สะดวกมาร่วมงานแต่ง</span></span>
+          <span class="text-lg font-extralight text-gray-700"><span style="color: green;">สะดวกมาร่วมงานแต่ง (Yes, I will attend)</span></span>
         </label>
         <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-rose-50 hover:border-rose-400 transition">
           <input type="radio" name="participation" value="No" class="h-6 w-6 mr-4 text-rose-500" required>
-          <span class="text-lg font-extralight text-gray-700"><span style="color: #b70000;">ไม่สะดวกเข้าร่วมงานแต่ง</span></span>
+          <span class="text-lg font-extralight text-gray-700"><span style="color: #b70000;">ไม่สะดวกเข้าร่วมงานแต่ง (No, I will not attend)</span></span>
         </label>
       </div>
 
       <div id="additionalQuestions" class="hidden">
         <div class="border-t border-gray-200 mt-4 pt-4">
-                <label for="numPeople" class="block text-xl font-semibold mt-4 mb-2 pt-4">1. จำนวนผู้มาร่วมงาน (รวมตัวท่าน) <span style="color: red;">*</span></label>
+                <label for="numPeople" class="block text-xl font-semibold mt-4 mb-2 pt-4">1. จำนวนผู้มาร่วมงาน (รวมตัวท่าน) <span style="color: red;">*</span><br/><span class="text-sm font-normal">How many guests will be attending with you (including yourself)?</span></label>
                 <select id="numPeople" name="numPeople" required class="w-full mt-4 p-5 text-lg text-black font-extralight border border-gray-300 rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2">
-                <option value="">-- โปรดเลือกจำนวนผู้มาร่วมงาน --</option>
+                <option value="">-- โปรดเลือกจำนวนผู้มาร่วมงาน (Please Select) --</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -55,49 +55,49 @@
         <div id="guestDetails"></div>
 
         <div class="border-t border-gray-200 mt-4 pt-4">
-                <label for="address" class="block text-xl font-semibold mt-4 pt-4">2. โปรดระบุที่อยู่ของท่าน เพื่อทำการจัดส่งการ์ดเชิญค่ะ/ครับ <span style="color: red;">*</span></label>
-                <textarea id="address" name="address" rows="3" required class="w-full mt-4 p-5 font-extralight text-lg text-black border border-gray-300 rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="กรุณาระบุที่อยู่สำหรับจัดส่งการ์ดเชิญทางไปรษณีย์ (ที่อยู่, อาคาร, ถนน, แขวง/ตำบล, เขต/อำเภอ, จังหวัด, รหัสไปรษณีย์)"></textarea>
+                <label for="address" class="block text-xl font-semibold mt-4 pt-4">2. โปรดระบุที่อยู่ของท่าน เพื่อทำการจัดส่งการ์ดเชิญค่ะ/ครับ<br/><span class="text-sm font-normal">Please provide your mailing address for your invitation card. </span></label>
+                <textarea id="address" name="address" rows="3" class="w-full mt-4 p-5 font-extralight text-lg text-black border border-gray-300 rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="กรุณาระบุที่อยู่สำหรับจัดส่งการ์ดเชิญทางไปรษณีย์ (ที่อยู่, อาคาร, ถนน, แขวง/ตำบล, เขต/อำเภอ, จังหวัด, รหัสไปรษณีย์)"></textarea>
         </div>
         
         <div class="border-t border-gray-200 mt-4 pt-4">
-            <label class="block text-xl font-semibold mt-4 pt-4">3. คุณเป็นแขก (เพื่อนหรือญาติ) ฝ่ายไหน? <span style="color: red;">*</span></label>
+            <label class="block text-xl font-semibold mt-4 pt-4">3. คุณเป็นแขก (เพื่อนหรือญาติ) ฝ่ายไหน? <span style="color: red;">*</span><br/><span class="text-sm font-normal">Which side are you a guest of?</span></label>
                 <div id="sideOptions" class="flex flex-col space-y-6 mt-4">
                         <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-rose-50 hover:border-rose-400 transition">
                         <input type="radio" name="side" value="BrideRelative" class="h-6 w-6 mr-4 accent-rose-400" required>
-                        <span class="text-lg font-extralight text-black">ญาติฝั่งเจ้าสาว</span>
+                        <span class="text-lg font-extralight text-black">ญาติฝั่งเจ้าสาว <span class="font-normal">(Bride's Relatives)</span></span>
                         </label>
                         <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-sky-50 hover:border-sky-400 transition">
                         <input type="radio" name="side" value="GroomRelative" class="h-6 w-6 mr-4 accent-sky-400" required>
-                        <span class="text-lg font-extralight text-black">ญาติฝั่งเจ้าบ่าว</span>
+                        <span class="text-lg font-extralight text-black">ญาติฝั่งเจ้าบ่าว <span class="font-normal">(Groom's Relatives)</span></span>
                         </label>
                         <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-rose-50 hover:border-rose-400 transition">
                         <input type="radio" name="side" value="BrideFriend" class="h-6 w-6 mr-4 accent-rose-400" required>
-                        <span class="text-lg font-extralight text-black">เพื่อนๆ เจ้าสาว</span>
+                        <span class="text-lg font-extralight text-black">เพื่อนๆ เจ้าสาว  <span class="font-normal">(Bride's Friends)</span></span>
                         </label>
                         <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-sky-50 hover:border-sky-400 transition">
                         <input type="radio" name="side" value="GroomFriend" class="h-6 w-6 mr-4 accent-sky-400" required>
-                        <span class="text-lg font-extralight text-black">เพื่อนๆ เจ้าบ่าว</span>
+                        <span class="text-lg font-extralight text-black">เพื่อนๆ เจ้าบ่าว  <span class="font-normal">(Groom's Friends)</span></span>
                         </label>
                 </div>
         </div>
         
-        <div class="border-t border-gray-200 mt-4 pt-4">
+        <!-- <div class="border-t border-gray-200 mt-4 pt-4">
           <label for="relationship" class="block text-xl font-semibold mt-4 pt-4">4. คุณเกี่ยวข้องแบบไหน? <span style="color: red;">*</span></label>
           <input type="text" id="relationship" name="relationship" placeholder="เช่น เพื่อนมหาวิทยาลัยเจ้าสาว หรือเพื่อนที่ทำงานเจ้าบ่าว" required class="w-full mt-4 p-5 text-lg font-extralight text-black border border-gray-300 rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2">
-        </div>
+        </div> -->
 
         <div class="border-t border-gray-200 mt-4 pt-4">
-          <label for="allergy" class="block text-xl font-semibold mt-4">5. คุณแพ้อาหารหรือมีข้อจำกัดด้านอาหารไหม?</label>
+          <label for="allergy" class="block text-xl font-semibold mt-4">4. คุณแพ้อาหารหรือมีข้อจำกัดด้านอาหารไหม?<br/> <span class="text-sm font-normal">Do you have any allergies or dietary restrictions? For example: cannot eat shrimp, or must have halal food.</span></label>
           <input type="allergy" id="allergy" name="allergy" class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="เช่น แพ้กุ้ง แพ้อาหารทะเล หรือต้องเป็นอาหารฮาลาล เป็นต้น">
         </div>
 
         <div class="border-t border-gray-200 mt-4 pt-4">
-          <label for="email" class="block text-xl font-semibold mt-4">6. ที่อยู่อีเมล (Email Address) <span style="color: red;">*</span></label>
+          <label for="email" class="block text-xl font-semibold mt-4">5. ที่อยู่อีเมล <span style="color: red;">*</span><br/><span class="text-sm font-normal">Email address for sending a calendar invite, if any. Otherwise, please leave it blank.</span></label>
           <input type="email" id="email" name="email" class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="โปรดระบุอีเมลสำหรับจัดส่ง Calendar Invite (ถ้าไม่มี ให้เว้นว่างไว้)">
         </div>
 
         <div class="border-t border-gray-200 mt-4 pt-4">
-          <label for="phone" class="block text-xl font-semibold mt-4">7. เบอร์โทรศัพท์สำหรับติดต่อ</label>
+          <label for="phone" class="block text-xl font-semibold mt-4">6. เบอร์โทรศัพท์สำหรับติดต่อ<br/><span class="text-sm font-normal">Phone number for the later call.</span></label>
           <input type="phone" id="phone" name="phone" class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="0XX-XXX-XXXX">
         </div>
         
@@ -155,14 +155,15 @@
         const group = document.createElement('div');
         group.className = "border-t border-gray-200 mt-4 pt-4";
         group.innerHTML = `
-          <h3 class="text-xl font-semibold text-rose-600 mb-2">แขกท่านที่ ${i}</h3>
-          <span class="text-md font-extralight text-sky-500">รบกวนกรอกข้อมูลให้ครบถ้วน เพื่อความสะดวกในการจัดที่นั่งให้ทุกท่านค่ะ/ครับ</span>
+          <h3 class="text-xl font-semibold text-rose-600 mb-2">แขกท่านที่ ${i} (Guest ${i})</h3>
+          <span class="text-sm font-extralight text-sky-500">รบกวนกรอกข้อมูลให้ครบถ้วน เพื่อความสะดวกในการจัดที่นั่งให้ทุกท่านค่ะ/ครับ</span><br/><span class="text-sm font-extralight text-sky-500">Please enter all fields for us to allocate your seat properly.</span>
+          
 
-          <label for="name${i}" class="block text-xl font-semibold mt-4">ชื่อ-นามสกุล (ภาษาไทย) <span style="color: red;">*</span></label>
-          <input type="text" id="name${i}" name="name${i}" required class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="โปรดระบุชื่อ-นามสกุลของคุณ">
+          <label for="name${i}" class="block text-xl font-semibold mt-4">ชื่อ-นามสกุล (ภาษาไทย) <span style="color: red;">*</span><br/><span class="text-sm font-normal">Full Name (in Thai) - If any.</span></label>
+          <input type="text" id="name${i}" name="name${i}" required class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="โปรดระบุชื่อ-นามสกุลภาษาไทยของคุณ">
 
-          <label for="nickname${i}" class="block text-xl font-semibold mt-4">ชื่อเล่น (ภาษาไทย) <span style="color: red;">*</span></label>
-          <input type="text" id="nickname${i}" name="nickname${i}" required class="w-full mt-4 p-5 text-lg border border-gray-300 text-black font-extralight rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="โปรดระบุชื่อเล่นของคุณ">
+          <label for="nickname${i}" class="block text-xl font-semibold mt-4">ชื่อ-นามสกุล (ภาษาอังกฤษ) <span style="color: red;">*</span><br/><span class="text-sm font-normal">Full Name (in English).</span></label>
+          <input type="text" id="nickname${i}" name="nickname${i}" required class="w-full mt-4 p-5 text-lg border border-gray-300 text-black font-extralight rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="โปรดระบุชื่อ-นามสกุลภาษาอังกฤษของคุณ">
         `;
         guestDetails.appendChild(group);
       }
