@@ -1,204 +1,377 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smithcha &amp; Charnon's Wedding RSVP</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Sarabun', sans-serif; }
-  </style>
-</head>
-<body class="text-gray-800" style="background: linear-gradient(to bottom, #E8D9E6 0%, #F5DDE0 25%, #FFF6E6 50%, #EBF6ED 75%, #EBF4FF 100%);">
-  <img src="https://charnon-cmkl.github.io/assets/img/BannerJT.png" alt="Wedding Banner" class="w-full">
-  <div class="flex justify-center mb-4">
-    <img src="https://charnon-cmkl.github.io/assets/img/Smithcha-Charnon_V2_A-01.png" alt="Wedding Logo" class="h-48 w-auto">
-  </div>
-  <h1 class="text-3xl font-semibold text-center text-black mb-4">&#128112; Smithcha &#128150; Charnon &#129333;</h1>
-  <h3 class="text-lg text-center text-gray-600">วันเสาร์ที่ 31 มกราคม พ.ศ. 2569</h3>
-  <h3 class="text-lg text-center text-gray-600">เวลา 11:30 น. (งานเลี้ยงฉลอง)</h3>
-  <h3 class="text-lg text-center text-gray-600 mb-6">The Eros Studio ถนนพัฒนาการ ตัดใหม่</h3>
-  <div class="max-w-xl mx-auto bg-white shadow-lg rounded-xl p-8">
-    <form id="rsvpForm">
-      <label class="block text-xl font-semibold mt-4 mb-4 text-center">คุณสามารถมาร่วมงานแต่งได้หรือไม่? <br/> <span class="text-sm">(Will you be attending our wedding?)</span></label>
-      <div id="participationOptions" class="flex flex-col items-center space-y-6">
-        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-green-100 hover:border-green-400 transition">
-          <input type="radio" name="participation" value="Yes" class="h-6 w-6 mr-4 accent-black" required>
-          <span class="text-lg font-extralight text-gray-700"><span style="color: green;">สะดวกมาร่วมงานแต่ง (Yes, I will attend)</span></span>
-        </label>
-        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-rose-50 hover:border-rose-400 transition">
-          <input type="radio" name="participation" value="No" class="h-6 w-6 mr-4 text-rose-500" required>
-          <span class="text-lg font-extralight text-gray-700"><span style="color: #b70000;">ไม่สะดวกเข้าร่วมงานแต่ง (No, I will not attend)</span></span>
-        </label>
-      </div>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Smithcha &amp; Charnon's Wedding RSVP</title>
+                <script src="https://cdn.tailwindcss.com"></script>
+                <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+                <style>
+                        body { 
+                                font-family: 'Sarabun', sans-serif; 
+                                background-color: aliceblue;
+                        }
 
-      <div id="additionalQuestions" class="hidden">
-        <div class="border-t border-gray-200 mt-4 pt-4">
-                <label for="numPeople" class="block text-xl font-semibold mt-4 mb-2 pt-4">1. จำนวนผู้มาร่วมงาน (รวมตัวท่าน) <span style="color: red;">*</span><br/><span class="text-sm font-normal">How many guests will be attending with you (including yourself)?</span></label>
-                <select id="numPeople" name="numPeople" required class="w-full mt-4 p-5 text-lg text-black font-extralight border border-gray-300 rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2">
-                <option value="">-- โปรดระบุ (Please Select) --</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <!-- <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option> -->
-                </select>
-        </div>
-        
+                        .contentDiv {
+                                position: relative;
+                        }
 
-        <div id="guestDetails"></div>
-        
-        <div class="border-t border-gray-200 mt-4 pt-4">
-            <label class="block text-xl font-semibold mt-4 pt-4">2. คุณเป็นแขก (เพื่อนหรือญาติ) ฝ่ายไหน? <span style="color: red;">*</span><br/><span class="text-sm font-normal">Which side are you a guest of?</span></label>
-                <div id="sideOptions" class="flex flex-col space-y-6 mt-4">
-                        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-rose-50 hover:border-rose-400 transition">
-                        <input type="radio" name="side" value="ญาติฝั่งเจ้าสาว" class="h-6 w-6 mr-4 accent-rose-400" required>
-                        <span class="text-lg font-extralight text-black">ญาติฝั่งเจ้าสาว <span class="font-normal">(Bride's Relatives)</span></span>
-                        </label>
-                        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-sky-50 hover:border-sky-400 transition">
-                        <input type="radio" name="side" value="ญาติฝั่งเจ้าบ่าว" class="h-6 w-6 mr-4 accent-sky-400" required>
-                        <span class="text-lg font-extralight text-black">ญาติฝั่งเจ้าบ่าว <span class="font-normal">(Groom's Relatives)</span></span>
-                        </label>
-                        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-rose-50 hover:border-rose-400 transition">
-                        <input type="radio" name="side" value="เพื่อนๆ เจ้าสาว" class="h-6 w-6 mr-4 accent-rose-400" required>
-                        <span class="text-lg font-extralight text-black">เพื่อนๆ เจ้าสาว  <span class="font-normal">(Bride's Friends)</span></span>
-                        </label>
-                        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-sky-50 hover:border-sky-400 transition">
-                        <input type="radio" name="side" value="เพื่อนๆ เจ้าบ่าว" class="h-6 w-6 mr-4 accent-sky-400" required>
-                        <span class="text-lg font-extralight text-black">เพื่อนๆ เจ้าบ่าว  <span class="font-normal">(Groom's Friends)</span></span>
-                        </label>
+                        @keyframes bouncing {
+                                0% {bottom: 0;}
+                                50% {bottom: 20px;}
+                                100% {bottom: 0;}
+                        }
+
+                        .arrow {
+                                animation: bouncing 1s infinite ease-in-out;
+                                bottom: 0;
+                                display: block;
+                                height: 50px;
+                                left: 50%;
+                                margin-left: -25px;
+                                position: fixed;
+                                width: 50px;
+                        }
+                </style>
+        </head>
+
+        <body class="text-gray-800 contentDiv">
+                <img src="assets/img/wedding/BannerJT.png" alt="Wedding Banner" class="w-full" />
+                <button id="scrollToBottomBtn">
+                        <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png" />
+                </button>
+                
+                <div class="flex justify-center mt-4 mb-4">
+                        <img src="/assets/img/wedding/Smithcha-Charnon_V2_A-01.png" alt="Wedding Logo" class="h-40 w-auto" />
                 </div>
-        </div>
-        
-        <!-- <div class="border-t border-gray-200 mt-4 pt-4">
-          <label for="relationship" class="block text-xl font-semibold mt-4 pt-4">4. คุณเกี่ยวข้องแบบไหน? <span style="color: red;">*</span></label>
-          <input type="text" id="relationship" name="relationship" placeholder="เช่น เพื่อนมหาวิทยาลัยเจ้าสาว หรือเพื่อนที่ทำงานเจ้าบ่าว" required class="w-full mt-4 p-5 text-lg font-extralight text-black border border-gray-300 rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2">
-        </div> -->
 
-        <div class="border-t border-gray-200 mt-4 pt-4">
-          <label for="allergy" class="block text-xl font-semibold mt-4">3. คุณแพ้อาหารหรือมีข้อจำกัดด้านอาหารไหม? <br/> <span class="text-sm font-normal">Do you have any allergies or dietary restrictions? For example: cannot eat shrimp, or must have halal food.</span></label>
-          <input type="allergy" id="allergy" name="allergy" class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="เช่น แพ้กุ้ง หรือต้องเป็นอาหารฮาลาล">
-        </div>
+                <h3 class="text-lg text-center text-gray-600 mb-6">
+                        &#128197;&ensp; วันเสาร์ที่ 31 มกราคม พ.ศ. 2569 <br/>
+                        &#128346;&ensp; เวลา 11:30 น. (งานเลี้ยงฉลอง) <br/>
+                        &#128205; The Eros Studio (พัฒนาการ ตัดใหม่)<br/>
+                </h3>
 
-        <div class="border-t border-gray-200 mt-4 pt-4">
-          <label for="email" class="block text-xl font-semibold mt-4">4. ที่อยู่อีเมล สำหรับจัดส่ง Calendar Invite   <span style="color: red;">*</span><br/><span class="text-sm font-normal">Email address for sending a calendar invite, if any. Otherwise, please leave it blank.</span></label>
-          <input type="email" id="email" name="email" class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="โปรดระบุอีเมล (ถ้าไม่มี ให้เว้นว่างไว้)">
-        </div>
+                <div class="max-w-xl mx-auto bg-white shadow-lg rounded-xl p-8">
+                        <form id="rsvpForm">
+                                <label class="block text-xl font-semibold mt-4 mb-4">
+                                        คุณสามารถมาร่วมงานแต่งได้หรือไม่?<br/>
+                                        <span class="text-sm">
+                                                (Will you be attending our wedding?)
+                                        </span>
+                                </label>
+                                <div id="participationOptions" class="flex flex-col items-center space-y-6">
+                                        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-green-100 hover:border-green-400 transition">
+                                                <input type="radio" name="participation" value="เข้าร่วม" class="h-6 w-6 mr-4 accent-green-600" required>
+                                                <span class="text-lg font-extralight text-green-700">สะดวกมาร่วมงานแต่ง (Yes, I will attend)</span>
+                                        </label>
+                                        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-rose-100 hover:border-rose-400 transition">
+                                                <input type="radio" name="participation" value="ไม่เข้าร่วม" class="h-6 w-6 mr-4 accent-red-600" required>
+                                                <span class="text-lg font-extralight text-red-700">
+                                                        ไม่สะดวกมาร่วมงาน (No, I will not attend).
+                                                </span>
+                                        </label>
+                                </div>
 
-        <div class="border-t border-gray-200 mt-4 pt-4">
-          <label for="phone" class="block text-xl font-semibold mt-4">5. เบอร์โทรศัพท์สำหรับติดต่อ<br/><span class="text-sm font-normal">Phone number for the later call.</span></label>
-          <input type="phone" id="phone" name="phone" class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="0XX-XXX-XXXX">
-        </div>
+                                <div id="additionalQuestions" class="hidden">
+                                        <div class="border-t border-gray-300 mt-4 pt-4">
+                                                <label for="numPeople" class="block text-xl font-semibold mt-4 mb-2 pt-4">
+                                                        1. จำนวนผู้มาร่วมงานกับท่าน (รวมตัวท่าน)
+                                                        <span class="text-red-600">*</span><br/>
+                                                        <span class="text-sm font-normal">
+                                                                How many guests will be attending with you (including yourself)?
+                                                        </span>
+                                                </label>
+                                                <select id="numPeople" name="numPeople" required class="w-full mt-4 p-5 text-lg text-black font-extralight border border-gray-300 rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2">
+                                                        <option value="">-- โปรดระบุ (Please Select) --</option>
+                                                        <option value="1">1 ท่าน</option>
+                                                        <option value="2">2 ท่าน</option>
+                                                        <option value="3">3 ท่าน</option>
+                                                        <option value="4">4 ท่าน</option>
+                                                        <option value="5">5 ท่าน</option>
+                                                </select>
+                                        </div>
 
-        <div class="border-t border-gray-200 mt-4 pt-4">
-          <label for="address" class="block text-xl font-semibold mt-4">6. โปรดระบุที่อยู่ของท่าน สำหรับจัดส่งการ์ดเชิญ (ถ้าต้องการ)<br/><span class="text-sm font-normal">Mailing address for your invitation card. </span></label>
-          <textarea id="address" name="address" rows="3" class="w-full mt-4 p-5 font-extralight text-lg text-black border border-gray-300 rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="ที่อยู่, อาคาร, ถนน, แขวง/ตำบล, เขต/อำเภอ, จังหวัด, รหัสไปรษณีย์"></textarea>
-        </div>
-        
-      </div>
+                                        <div id="guestDetails">
+                                        </div>
 
-      <button type="submit" id="submitBtn" class="hidden w-full py-4 px-6 text-xl font-semibold text-white bg-rose-500 hover:bg-rose-600 rounded-lg transition mt-6">ส่งการตอบรับ (Submit)</button>
-    </form>
-    <div id="loadingPopup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
-      <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
-        <svg class="animate-spin h-6 w-6 text-rose-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
-        </svg>
-        <span class="text-gray-700 font-medium">กำลังส่งข้อมูล (Loading) ...</span>
-      </div>
-    </div>
-    <div id="successPopup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm">
-        <h2 class="text-xl font-semibold text-green-600 mb-4">ขอบคุณที่ตอบแบบฟอร์มของเรา<br/>Thank you for submitting the form.</h2>
-        <p class="text-gray-700 mb-4">เราจะจัดเตรียมที่นั่งให้พร้อม<br/>แล้วพบกันในวันงานนะคะ/ครับ ❤️</p>
-        <p>We will make sure to allocate your seat properly. Hope to see you at our wedding ❤️</p>
-        <button id="closeSuccessPopup" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">ปิด (Dismiss)</button>
-      </div>
-    </div>
-  </div>
+                                        <div class="border-t border-gray-200 mt-4 pt-4">
 
-  <script>
-    const participationRadios = document.getElementsByName('participation');
-    const additionalQuestions = document.getElementById('additionalQuestions');
-    const numPeopleInput = document.getElementById('numPeople');
-    const guestDetails = document.getElementById('guestDetails');
-    const submitBtn = document.getElementById('submitBtn');
+                                                <label class="block text-xl font-semibold mt-4 pt-4">
+                                                        2. คุณเป็นแขกฝ่ายไหน?
+                                                        <span class="text-red-600">*</span><br/>
+                                                        <span class="text-sm font-normal">
+                                                                Which side are you a guest of?
+                                                        </span>
+                                                </label>
+                                                <div id="sideOptions" class="flex flex-col space-y-6 mt-4">
+                                                        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-rose-50 hover:border-rose-400 transition">
+                                                                <input type="radio" name="side" value="ญาติฝั่งเจ้าสาว" class="h-6 w-6 mr-4 accent-rose-400" required>
+                                                                <span class="text-lg font-extralight text-black">
+                                                                        ญาติฝั่งเจ้าสาว (Bride's Relatives)
+                                                                </span>
+                                                        </label>
+                                                        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-sky-50 hover:border-sky-400 transition">
+                                                                <input type="radio" name="side" value="ญาติฝั่งเจ้าบ่าว" class="h-6 w-6 mr-4 accent-sky-400" required>
+                                                                <span class="text-lg font-extralight text-black">
+                                                                        ญาติฝั่งเจ้าบ่าว (Groom's Relatives)
+                                                                </span>
+                                                        </label>
+                                                        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-rose-50 hover:border-rose-400 transition">
+                                                                <input type="radio" name="side" value="แขกฝั่งเจ้าสาว" class="h-6 w-6 mr-4 accent-rose-400" required>
+                                                                <span class="text-lg font-extralight text-black">
+                                                                        แขกฝั่งเจ้าสาว (Bride's Guests)
+                                                                </span>
+                                                        </label>
+                                                        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-sky-50 hover:border-sky-400 transition">
+                                                                <input type="radio" name="side" value="แขกฝั่งเจ้าบ่าว" class="h-6 w-6 mr-4 accent-sky-400" required>
+                                                                <span class="text-lg font-extralight text-black">
+                                                                        แขกฝั่งเจ้าบ่าว (Groom's Guests)
+                                                                </span>
+                                                        </label>
+                                                </div>
+                                        </div>
 
-    // const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzkuoD26bg1ctaSl0sOkZK86_hem0hUEuixhOB6Mp85iZQQUdbDS-cPqfEIZqtuzMXLHA/exec";
+                                        <div class="border-t border-gray-200 mt-4 pt-4">
+                                                <label for="allergy" class="block text-xl font-semibold mt-4">
+                                                        3. คุณแพ้อาหารหรือมีข้อจำกัดด้านอาหารไหม? <br/> 
+                                                        <span class="text-sm font-normal">
+                                                                Do you have any allergies or dietary restrictions? <br/> 
+                                                                For example: cannot eat shrimp, or must have halal food.
+                                                        </span>
+                                                </label>
+                                                <input type="allergy" id="allergy" name="allergy" class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="เช่น แพ้กุ้ง หรือต้องเป็นอาหารฮาลาล">
+                                        </div>
 
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzrGFetiAXHz41TchHcjw3VVis_94J84mBKnwbrEIYHu8gRYoqgT3OjAjSi5Ksq9pZo/exec"
+                                        <div class="border-t border-gray-200 mt-4 pt-4">
+                                                <label for="email" class="block text-xl font-semibold mt-4">
+                                                        4. อีเมลสำหรับจัดส่ง Calendar Invite<br/>
+                                                        <span class="text-sm font-normal">
+                                                                Email address for sending a calendar invite, if any. Otherwise, please leave it blank.
+                                                        </span>
+                                                </label>
+                                                <input type="email" id="email" name="email" class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="โปรดระบุอีเมล (ถ้าไม่มี ให้เว้นว่างไว้)">
+                                        </div>
 
-    participationRadios.forEach(radio => {
-      radio.addEventListener('change', () => {
-        if (radio.value === 'Yes') {
-          additionalQuestions.classList.remove('hidden');
-          submitBtn.classList.remove('hidden');
-          // document.getElementById('numPeople').focus();
-        }  else if (radio.value === 'No') {
-          // Redirect to wedding_rsvp_no.html
-          window.location.href = "wedding_rsvp_no.html";
-        }
-      });
-    });
+                                        <div class="border-t border-gray-200 mt-4 pt-4">
+                                                <label for="post" class="block text-xl font-semibold mt-4 mb-4">
+                                                        5. คุณต้องการให้ส่งการ์ดเชิญไปทางไปรษณีย์หรือไม่? <br/> 
+                                                        <span class="text-sm font-normal">
+                                                                Would you like us to send you an invitation card via post?
+                                                        </span>
+                                                </label>
+                                                <div id="postOptions" class="flex flex-col items-center space-y-6">
+                                                        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-green-100 hover:border-green-400 transition">
+                                                                <input type="radio" name="post" value="ต้องการ" class="h-6 w-6 mr-4 accent-green-600" required>
+                                                                <span class="text-lg font-extralight text-green-700">
+                                                                        ใช่ (Yes, please)
+                                                                </span>
+                                                        </label>
+                                                        <label class="flex items-center justify-start w-full border border-gray-300 rounded-lg px-5 py-4 cursor-pointer hover:bg-rose-100 hover:border-rose-400 transition">
+                                                                <input type="radio" name="post" value="ไม่ต้องการ" class="h-6 w-6 mr-4 accent-red-600" required checked>
+                                                                <span class="text-lg font-extralight text-red-700">
+                                                                        ไม่ (No, thanks)
+                                                                </span>
+                                                        </label>
+                                                </div>
+                                        </div>
 
-    numPeopleInput.addEventListener('input', () => {
-      const numPeople = parseInt(numPeopleInput.value) || 0;
-      guestDetails.innerHTML = '';
 
-      for (let i = 1; i <= numPeople; i++) {
-        const group = document.createElement('div');
-        group.className = "border-t border-gray-200 mt-4 pt-4";
-        group.innerHTML = `
-          <h3 class="text-xl font-semibold text-rose-600 mb-2">แขกท่านที่ ${i} (Guest ${i})</h3>
-          <span class="text-sm font-extralight text-sky-500">รบกวนกรอกข้อมูลให้ครบถ้วน เพื่อความสะดวกในการจัดที่นั่งให้ทุกท่านค่ะ/ครับ</span><br/><span class="text-sm font-extralight text-sky-500">Please complete all fields so we can allocate your seat properly.</span>
+                                        <div id="deliveryDetails" class="hidden">
+
+                                                <div class="border-t border-gray-200 mt-4 pt-4">
+                                                        <label for="address" class="block text-xl font-semibold mt-4">
+                                                                6. โปรดระบุที่อยู่ของท่าน สำหรับจัดส่งการ์ดเชิญ <br/>
+                                                                <span class="text-sm font-normal">
+                                                                        Mailing address for your invitation card. 
+                                                                </span>
+                                                        </label>
+                                                        <textarea id="address" name="address" rows="3" class="w-full mt-4 p-5 font-extralight text-lg text-black border border-gray-300 rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="ที่อยู่, อาคาร, ถนน, แขวง/ตำบล, เขต/อำเภอ, จังหวัด, รหัสไปรษณีย์"></textarea>
+                                                </div>
+
+                                                <div class="border-t border-gray-200 mt-4 pt-4">
+                                                        <label for="phone" class="block text-xl font-semibold mt-4">
+                                                                7. เบอร์โทรศัพท์สำหรับติดต่อ<br/>
+                                                                <span class="text-sm font-normal">
+                                                                        Phone number for the deliver call.
+                                                                </span>
+                                                        </label>
+                                                        <input type="phone" id="phone" name="phone" class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="0XX-XXX-XXXX">
+                                                </div>
+
+                                        </div>
+                                </div>
+
+                                <button type="submit" id="submitBtn" class="hidden w-full py-4 px-6 text-xl font-semibold text-white bg-rose-500 hover:bg-rose-600 rounded-lg transition mt-6">
+                                        ส่งการตอบรับ (Submit)
+                                </button>
+                        </form>
+                </div>
+
+                <div id="loadingPopup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+                        <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                                <svg class="animate-spin h-6 w-6 text-rose-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                                </svg>
+                                <span class="text-gray-700 font-medium">กำลังส่งข้อมูล (Loading) ...</span>
+                        </div>
+                </div>
+
+                <div id="successPopup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm">
+                                <h2 class="text-xl font-semibold text-green-600 mb-4">
+                                        ขอบคุณที่ตอบแบบฟอร์มของเรา<br/>Thank you for submitting the form.
+                                </h2>
+                                <p class="text-gray-700 mb-4">
+                                        เราจะจัดเตรียมที่นั่งให้พร้อม<br/>แล้วพบกันในวันงานนะคะ/ครับ ❤️
+                                </p>
+                                <p>
+                                        We will make sure to allocate your seat properly. Hope to see you at our wedding ❤️
+                                </p>
+                                <button id="closeSuccessPopup" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
+                                        ปิด (Dismiss)
+                                </button>
+                        </div>
+                </div>
+                
+
+                <footer class="bg-neutral-primary-soft rounded-base shadow-xs border border-default m-4">
+                        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+                                <span class="text-sm text-body sm:text-center">
+                                        © 2025 Smithcha &amp; Charnon. All Rights Reserved for Our Special Wedding Day.
+                                </span>
+                        </div>
+                </footer>
+
+                <script>
+
+                        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzeK3rqm48zQ2_Zvv24UY7YgPirdOyJLaDzN9SllbVt7hrJMW-qd2LDHCdhEsST_wy4oA/exec"
+
+                        const participationRadios = document.getElementsByName('participation');
+                        const additionalQuestions = document.getElementById('additionalQuestions');
+                        const numPeopleInput = document.getElementById('numPeople');
+                        const sideRadios = document.getElementsByName('side');
+                        const allergyInput = document.getElementById('allergy');
+                        const emailInput = document.getElementById('email');
+                        const deliveryRadios = document.getElementsByName('post');
+                        const deliveryDetails = document.getElementById('deliveryDetails');
+                        const deliveryAddress = document.getElementById('address');
+                        const deliveryPhone = document.getElementById('phone');
+                        const submitBtn = document.getElementById('submitBtn');
+
+                        // Scroll down to the bottom when clicking on the bottom arrow.
+                        document.getElementById('scrollToBottomBtn').addEventListener('click', () => {
+                                window.scrollTo({
+                                        top: document.body.scrollHeight,
+                                        behavior: 'smooth'
+                                })
+                        });
+
+                        participationRadios.forEach(radio => {
+                                radio.addEventListener('change', () => {
+                                        if (radio.value === 'เข้าร่วม'){
+                                                additionalQuestions.classList.remove('hidden');
+                                                submitBtn.classList.remove('hidden');
+                                                numPeopleInput.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                                numPeopleInput.focus();
+                                        } else if (radio.value === 'ไม่เข้าร่วม'){
+                                                window.location.href = "wedding_rsvp_no.html";
+                                        }
+                                });
+                        });
+
+                        numPeopleInput.addEventListener('input', () => {
+                                const numPeople = parseInt(numPeopleInput.value) || 0;
+                                guestDetails.innerHTML = '';
+
+                                for (let i = 1; i <= numPeople; i++) {
+                                        const group = document.createElement('div');
+                                        group.className = "border-t border-gray-200 mt-4 pt-4";
+                                        group.innerHTML = `
+                                                <h3 class="text-xl font-semibold text-rose-600 mb-2">
+                                                        แขกท่านที่ ${i} (Guest ${i})
+                                                </h3>
+                                                <span class="text-sm font-normal text-sky-500">
+                                                        รบกวนกรอกข้อมูลให้ครบถ้วน เพื่อความสะดวกในการจัดที่นั่งให้ทุกท่านค่ะ/ครับ
+                                                </span><br/>
+                                                <span class="text-sm font-normal text-sky-500">
+                                                        Please complete all fields so we can allocate your seat properly.
+                                                </span>
           
 
-          <label for="name${i}" class="block text-xl font-semibold mt-4">ชื่อ-นามสกุล (ภาษาไทย) <span style="color: red;">*</span><br/><span class="text-sm font-normal">Full Name (in Thai) - If any.</span></label>
-          <input type="text" id="name${i}" name="name${i}" required class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="โปรดระบุชื่อ-นามสกุลภาษาไทยของคุณ">
+                                                <label for="name${i}" class="block text-xl font-semibold mt-4 pt-4">
+                                                        ชื่อ-นามสกุล (ภาษาไทย) 
+                                                        <span style="color: red;">*</span><br/>
+                                                        <span class="text-sm font-normal">
+                                                                Please enter your full name.
+                                                        </span>
+                                                </label>
+                                                <input type="text" id="name${i}" name="name${i}" required class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="โปรดระบุชื่อ-นามสกุลภาษาไทยของคุณ">
+                                        `;
+                                        guestDetails.appendChild(group);
+                                }
+                        });
 
-          <label for="nickname${i}" class="block text-xl font-semibold mt-4">ชื่อ-นามสกุล (ภาษาอังกฤษ) <span style="color: red;">*</span><br/><span class="text-sm font-normal">Full Name (in English).</span></label>
-          <input type="text" id="nickname${i}" name="nickname${i}" required class="w-full mt-4 p-5 text-lg border border-gray-300 text-black font-extralight rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="โปรดระบุชื่อ-นามสกุลภาษาอังกฤษของคุณ">
-        `;
-        guestDetails.appendChild(group);
-      }
-    });
+                        sideRadios.forEach(radio => {
+                                radio.addEventListener('change', () => {
+                                        allergyInput.scrollIntoView({ behavior: 'smooth', block: 'start'});
+                                        allergyInput.focus();
+                                });
+                        });
 
-    document.getElementById('rsvpForm').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const loadingPopup = document.getElementById('loadingPopup');
-      loadingPopup.classList.remove('hidden'); // show popup
+                        allergyInput.onblur = function() {
+                                emailInput.scrollIntoView({ behavior: 'smooth', block: 'start'});
+                                emailInput.focus();
+                        }
 
-      const formData = new FormData(e.target);
 
-      try {
-        await fetch(GOOGLE_SCRIPT_URL, {
-          method: 'POST',
-          body: formData
-        });
-        const successPopup = document.getElementById('successPopup');
-        successPopup.classList.remove('hidden');
-        e.target.reset();
-        additionalQuestions.classList.add('hidden');
-        guestDetails.innerHTML = '';
-        submitBtn.classList.add('hidden');
-      } catch (error) {
-        alert('There was an error submitting your RSVP. Please try again.');
-        console.error(error);
-      } finally {
-        loadingPopup.classList.add('hidden'); // hide popup
-      }
-    });
+                        deliveryRadios.forEach(radio => {
+                                radio.addEventListener('change', () => {
+                                        if (radio.value === 'ต้องการ'){
+                                                deliveryDetails.classList.remove('hidden');
+                                                deliveryAddress.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                                deliveryAddress.focus();
+                                        } else if (radio.value === 'ไม่ต้องการ'){
+                                                deliveryDetails.classList.add('hidden');
+                                        }
+                                });
+                        });
 
-    document.getElementById('closeSuccessPopup').addEventListener('click', () => {
-      document.getElementById('successPopup').classList.add('hidden');
-    });
-  </script>
-</body>
+                        deliveryAddress.onblur = function() {
+                                deliveryPhone.scrollIntoView({ behavior: 'smooth', block: 'start'});
+                                deliveryPhone.focus();
+                        }
+
+                        document.getElementById('rsvpForm').addEventListener('submit', async (e) => {
+                                e.preventDefault();
+                                const loadingPopup = document.getElementById('loadingPopup');
+                                loadingPopup.classList.remove('hidden'); // show popup
+
+                                const formData = new FormData(e.target);
+
+                                try {
+                                        await fetch(GOOGLE_SCRIPT_URL, {
+                                                method: 'POST',
+                                                body: formData
+                                        });
+                                        const successPopup = document.getElementById('successPopup');
+                                        successPopup.classList.remove('hidden');
+                                        e.target.reset();
+                                        additionalQuestions.classList.add('hidden');
+                                        guestDetails.innerHTML = '';
+                                        submitBtn.classList.add('hidden');
+                                } catch (error) {
+                                        alert('There was an error submitting your RSVP. Please try again.');
+                                        console.error(error);
+                                } finally {
+                                        loadingPopup.classList.add('hidden'); // hide popup
+                                }
+                        });
+
+                        document.getElementById('closeSuccessPopup').addEventListener('click', () => {
+                                document.getElementById('successPopup').classList.add('hidden');
+                        });
+
+                </script>
+        </body>
 </html>
