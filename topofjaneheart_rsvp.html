@@ -73,7 +73,7 @@
                                 </div>
 
                                 <div id="additionalQuestions" class="hidden">
-                                        <div class="border-t border-gray-300 mt-4 pt-4">
+                                        <div id="numPeopleDiv" class="border-t border-gray-300 mt-4 pt-4">
                                                 <label for="numPeople" class="block text-xl font-semibold mt-4 mb-2 pt-4">
                                                         1. จำนวนผู้มาร่วมงานกับท่าน (รวมตัวท่าน)
                                                         <span class="text-red-600">*</span><br/>
@@ -249,6 +249,7 @@
 
                         const participationRadios = document.getElementsByName('participation');
                         const additionalQuestions = document.getElementById('additionalQuestions');
+                        const numPeopleDiv = document.getElementById('numPeopleDiv');
                         const numPeopleInput = document.getElementById('numPeople');
                         const sideRadios = document.getElementsByName('side');
                         const allergyInput = document.getElementById('allergy');
@@ -272,7 +273,7 @@
                                         if (radio.value === 'เข้าร่วม'){
                                                 additionalQuestions.classList.remove('hidden');
                                                 submitBtn.classList.remove('hidden');
-                                                numPeopleInput.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                                numPeopleDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
                                                 numPeopleInput.focus();
                                         } else if (radio.value === 'ไม่เข้าร่วม'){
                                                 window.location.href = "wedding_rsvp_no.html";
