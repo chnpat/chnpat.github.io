@@ -131,7 +131,7 @@
                                                 </div>
                                         </div>
 
-                                        <div class="border-t border-gray-200 mt-4 pt-4">
+                                        <div id="allergyDiv" class="border-t border-gray-200 mt-4 pt-4">
                                                 <label for="allergy" class="block text-xl font-semibold mt-4">
                                                         3. คุณแพ้อาหารหรือมีข้อจำกัดด้านอาหารไหม? <br/> 
                                                         <span class="text-sm font-normal">
@@ -142,7 +142,7 @@
                                                 <input type="allergy" id="allergy" name="allergy" class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="เช่น แพ้กุ้ง หรือต้องเป็นอาหารฮาลาล">
                                         </div>
 
-                                        <div class="border-t border-gray-200 mt-4 pt-4">
+                                        <div id="emailDiv" class="border-t border-gray-200 mt-4 pt-4">
                                                 <label for="email" class="block text-xl font-semibold mt-4">
                                                         4. อีเมลสำหรับจัดส่ง Calendar Invite<br/>
                                                         <span class="text-sm font-normal">
@@ -152,7 +152,7 @@
                                                 <input type="email" id="email" name="email" class="w-full mt-4 p-5 text-lg border border-gray-300 rounded-lg text-black font-extralight focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="โปรดระบุอีเมล (ถ้าไม่มี ให้เว้นว่างไว้)">
                                         </div>
 
-                                        <div class="border-t border-gray-200 mt-4 pt-4">
+                                        <div id="postDiv" class="border-t border-gray-200 mt-4 pt-4">
                                                 <label for="post" class="block text-xl font-semibold mt-4 mb-4">
                                                         5. คุณต้องการให้ส่งการ์ดเชิญไปทางไปรษณีย์หรือไม่? <br/> 
                                                         <span class="text-sm font-normal">
@@ -178,7 +178,7 @@
 
                                         <div id="deliveryDetails" class="hidden">
 
-                                                <div class="border-t border-gray-200 mt-4 pt-4">
+                                                <div id="addressDiv" class="border-t border-gray-200 mt-4 pt-4">
                                                         <label for="address" class="block text-xl font-semibold mt-4">
                                                                 6. โปรดระบุที่อยู่ของท่าน สำหรับจัดส่งการ์ดเชิญ <br/>
                                                                 <span class="text-sm font-normal">
@@ -188,7 +188,7 @@
                                                         <textarea id="address" name="address" rows="3" class="w-full mt-4 p-5 font-extralight text-lg text-black border border-gray-300 rounded-lg focus:border-rose-400 focus:ring-rose-200 mr-2" placeholder="ที่อยู่, อาคาร, ถนน, แขวง/ตำบล, เขต/อำเภอ, จังหวัด, รหัสไปรษณีย์"></textarea>
                                                 </div>
 
-                                                <div class="border-t border-gray-200 mt-4 pt-4">
+                                                <div id="phoneDiv" class="border-t border-gray-200 mt-4 pt-4">
                                                         <label for="phone" class="block text-xl font-semibold mt-4">
                                                                 7. เบอร์โทรศัพท์สำหรับติดต่อ<br/>
                                                                 <span class="text-sm font-normal">
@@ -251,12 +251,18 @@
                         const additionalQuestions = document.getElementById('additionalQuestions');
                         const numPeopleDiv = document.getElementById('numPeopleDiv');
                         const numPeopleInput = document.getElementById('numPeople');
+                        const guestDetailsDiv = document.getElementById('guestDetails');
                         const sideRadios = document.getElementsByName('side');
+                        const allergyDiv = document.getElementById('allergyDiv');
                         const allergyInput = document.getElementById('allergy');
+                        const emailDiv = document.getElementById('allergyDiv');
                         const emailInput = document.getElementById('email');
+                        const deliveryDiv = document.getElementById('postDiv');
                         const deliveryRadios = document.getElementsByName('post');
                         const deliveryDetails = document.getElementById('deliveryDetails');
+                        const deliveryAddressDiv = document.getElementById('addressDiv');
                         const deliveryAddress = document.getElementById('address');
+                        const deliveryPhoneDiv = document.getElementById('phoneDiv');
                         const deliveryPhone = document.getElementById('phone');
                         const submitBtn = document.getElementById('submitBtn');
 
@@ -274,7 +280,6 @@
                                                 additionalQuestions.classList.remove('hidden');
                                                 submitBtn.classList.remove('hidden');
                                                 numPeopleDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                                                numPeopleInput.focus();
                                         } else if (radio.value === 'ไม่เข้าร่วม'){
                                                 window.location.href = "wedding_rsvp_no.html";
                                         }
@@ -311,18 +316,24 @@
                                         `;
                                         guestDetails.appendChild(group);
                                 }
+
+                                guestDetailsDiv.scrollIntoView({ behavior: 'smooth', block: 'start'});
                         });
 
                         sideRadios.forEach(radio => {
                                 radio.addEventListener('change', () => {
-                                        allergyInput.scrollIntoView({ behavior: 'smooth', block: 'start'});
+                                        allergyDiv.scrollIntoView({ behavior: 'smooth', block: 'start'});
                                         allergyInput.focus();
                                 });
                         });
 
                         allergyInput.onblur = function() {
-                                emailInput.scrollIntoView({ behavior: 'smooth', block: 'start'});
+                                emailDiv.scrollIntoView({ behavior: 'smooth', block: 'start'});
                                 emailInput.focus();
+                        }
+
+                        emailInput.onblur = function() {
+                                deliveryDiv.scrollIntoView({ behavior: 'smooth', block: 'start'});
                         }
 
 
@@ -330,7 +341,7 @@
                                 radio.addEventListener('change', () => {
                                         if (radio.value === 'ต้องการ'){
                                                 deliveryDetails.classList.remove('hidden');
-                                                deliveryAddress.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                                deliveryAddressDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
                                                 deliveryAddress.focus();
                                         } else if (radio.value === 'ไม่ต้องการ'){
                                                 deliveryDetails.classList.add('hidden');
@@ -339,7 +350,7 @@
                         });
 
                         deliveryAddress.onblur = function() {
-                                deliveryPhone.scrollIntoView({ behavior: 'smooth', block: 'start'});
+                                deliveryPhoneDiv.scrollIntoView({ behavior: 'smooth', block: 'start'});
                                 deliveryPhone.focus();
                         }
 
